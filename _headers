@@ -1,0 +1,9 @@
+# Nagłówki dla Cloudflare Pages / Netlify.
+# COOP + COEP włączają wielowątkowość WebAssembly, dzięki czemu wycinanie tła AI
+# w studiu demo działa szybciej i bez ostrzeżeń w konsoli. "credentialless"
+# pozwala dalej ładować font z Google Fonts i bibliotekę z jsDelivr.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

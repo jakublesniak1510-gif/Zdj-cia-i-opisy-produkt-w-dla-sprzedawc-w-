@@ -13,7 +13,11 @@
 <meta property="og:site_name" content="Kadr">
 <meta property="og:title" content="Kadr — zdjęcia i opisy produktów na Allegro">
 <meta property="og:description" content="Zdjęcie z telefonu → oferta gotowa na Allegro w 60 sekund. Białe tło, aranżacje, tytuł, parametry i opis. AI nie zmienia Twojego produktu, tylko tło.">
-<meta name="twitter:card" content="summary">
+<!-- og:image ma ścieżkę względną; po wyborze domeny podmień na adres bezwzględny, np. https://twojadomena.pl/og-image.png -->
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:alt" content="Kadr — zdjęcie produktu z telefonu zamienione w ofertę gotową na Allegro">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -72,6 +76,102 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czy Allegro pozwala na zdjęcia z AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zdjęcie główne na Allegro musi pokazywać produkt na białym tle, bez znaków wodnych, napisów i ramek. Kadr nie generuje produktu — wycina go z Twojego zdjęcia i kładzie na białym tle, więc to nadal zdjęcie Twojego przedmiotu. Aranżacje traktuj jako zdjęcia dodatkowe. Wizualizacje tworzone przez AI oznaczamy, a regulaminy platform sprawdzamy co miesiąc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy AI zmieni wygląd mojego produktu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nie. Pracujemy w trybie „tylko tło”: produkt jest chroniony maską, więc jego kształt, kolor, logo i ślady użytkowania zostają bez zmian. Podmieniamy wyłącznie tło i światło."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie wymiary ma zdjęcie główne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eksportujemy kwadrat 2560×2560 px w formacie JPG. Allegro wymaga minimum 500 px i zaleca 2560 px na dłuższym boku. W jednej ofercie możesz mieć maksymalnie 16 zdjęć."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy opis jest unikalny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak. Opis powstaje dla konkretnego produktu — na podstawie zdjęcia i danych, które podasz — a nie z jednego szablonu dla wszystkich. Piszemy bez słów zakazanych przez Allegro i bez superlatyw, których nie da się udowodnić. Przed publikacją warto go przeczytać i dopisać szczegóły, które znasz tylko Ty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co z moimi zdjęciami i RODO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zdjęcia przechowujemy na serwerach w Unii Europejskiej i automatycznie usuwamy je po 30 dniach. Nie trenujemy modeli na Twoich zdjęciach. To ważne szczególnie dla rękodzielników, którzy chronią swoje wzory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy moje zdjęcie jest gdzieś wysyłane?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nie. Studio demo na tej stronie działa w całości w Twojej przeglądarce: audyt, kadrowanie, aranżacje i wycinanie tła liczą się na Twoim urządzeniu, a zdjęcie nie trafia na nasz serwer. Z internetu pobierany jest tylko sam model AI — przy pierwszym wycinaniu, z publicznych serwerów CDN dostawcy biblioteki (jsDelivr i IMG.LY). Twoje zdjęcie nie jest tam wysyłane."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dlaczego wycinanie AI w demo jest wolne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bo model AI pracuje na procesorze Twojego telefonu lub komputera, a przy pierwszym uruchomieniu przeglądarka musi go pobrać (ok. 40–80 MB). Kolejne wycinania są szybsze, bo model zostaje w pamięci przeglądarki. W pełnej wersji Kadra wycinanie robi serwer, więc nie obciąża Twojego urządzenia i nie wymaga pobierania modelu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy Kadr działa na Vinted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak. Regulamin Vinted wymaga zdjęć rzeczywistego przedmiotu — Kadr go nie zmienia, podmienia tylko tło. Czyste zdjęcie i dobry tytuł przydadzą się też na OLX, Etsy czy Instagramie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak płacę?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BLIK-iem, kartą lub przez Przelewy24. Fakturę VAT wystawiamy automatycznie. Pakiet „Na start” kupujesz jednorazowo, a plany „Sklep” i „Pro” to abonament miesięczny."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy mogę przetworzyć 50 zdjęć naraz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, w planie Pro. Wgrywasz paczkę ZIP z maksymalnie 50 zdjęciami, a Kadr przetwarza je w jednej kolejce. Plan Pro obejmuje 1000 zdjęć miesięcznie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co dostaję w darmowym planie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3 zdjęcia ze znakiem wodnym i 3 tytuły — wystarczy, żeby sprawdzić efekt na własnym produkcie. Studio demo, generator tytułów, sprawdzanie tytułu i opis na tej stronie możesz używać bez limitu i bez logowania."
+      }
+    }
+  ]
+}
+</script>
 <style>
 :root {
   --bg: #fbfaf8;
@@ -90,6 +190,8 @@
   --ok-soft: #e7f6ec;
   --bad: #b91c1c;
   --bad-soft: #fdecec;
+  --warn: #a15c07;
+  --warn-soft: #fdf3dc;
   --band-bg: #1c1a3d;
   --band-surface: #27245a;
   --band-text: #f3f2ff;
@@ -121,6 +223,8 @@
     --ok-soft: #10291a;
     --bad: #fb7a7a;
     --bad-soft: #351718;
+    --warn: #fbbf24;
+    --warn-soft: #33270c;
     --band-bg: #17153a;
     --band-surface: #221f52;
     --band-text: #f3f2ff;
@@ -250,63 +354,61 @@ section { scroll-margin-top: 76px; }
 .hero-meta li { display: inline-flex; align-items: center; gap: 6px; }
 .hero-meta svg { width: 16px; height: 16px; color: var(--ok); flex: none; }
 
-/* Before / after */
-.ba {
-  margin: 56px auto 0; max-width: 900px;
-  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px;
-}
-.ba-card { margin: 0; }
-.ba-frame {
+/* Porównanie przed / po (suwak) */
+.cmp {
+  --pos: 50%;
   position: relative; aspect-ratio: 1 / 1; border-radius: 20px; overflow: hidden;
-  border: 1px solid var(--border); box-shadow: var(--shadow);
+  border: 1px solid var(--border); box-shadow: var(--shadow); background: #fff;
+  touch-action: pan-y; -webkit-user-select: none; user-select: none; cursor: ew-resize;
+  -webkit-tap-highlight-color: transparent;
 }
-.ba-before .ba-frame { aspect-ratio: 3 / 4; }
-.ba-before .ba-frame {
+.cmp-layer { position: absolute; inset: 0; }
+.cmp-layer canvas { width: 100%; height: 100%; display: block; }
+.cmp-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.cmp-line {
+  position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px;
+  background: #fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, .18); pointer-events: none;
+}
+.cmp-handle {
+  position: absolute; top: 50%; left: var(--pos); width: 46px; height: 46px; margin: -23px 0 0 -23px;
+  border-radius: 50%; background: #fff; color: #4f46e5; display: grid; place-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .28); cursor: ew-resize; touch-action: none;
+}
+.cmp-handle svg { width: 24px; height: 24px; }
+.cmp-handle:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 50%; }
+.cmp-tag {
+  position: absolute; top: 12px; padding: 5px 10px; border-radius: 999px; pointer-events: none;
+  font-size: 12px; font-weight: 700; letter-spacing: .02em; background: rgba(20, 20, 24, .72); color: #fff;
+}
+.cmp-tag-l { left: 12px; }
+.cmp-tag-r { right: 12px; background: #4f46e5; }
+.hero-cmp { margin: 56px auto 0; max-width: 560px; }
+.hb-before {
   background:
     radial-gradient(60% 40% at 78% 18%, rgba(255, 246, 214, .55), transparent 70%),
     radial-gradient(70% 55% at 15% 30%, #8f8c86, transparent 72%),
     radial-gradient(55% 45% at 85% 62%, #6f6c66, transparent 70%),
     linear-gradient(176deg, #a29e96 0%, #8a867f 52%, #6b675f 53%, #7b766d 72%, #5f5a52 100%);
 }
-.ba-before .clutter {
-  position: absolute; border-radius: 12px; filter: blur(7px); opacity: .7;
-}
-.ba-before .clutter-1 { width: 28%; height: 34%; left: 6%; top: 14%; background: #5c5a57; }
-.ba-before .clutter-2 { width: 22%; height: 10%; right: 4%; top: 40%; background: #b8b1a3; border-radius: 40px; }
-.ba-before .shadow-blob {
-  position: absolute; left: 30%; width: 52%; height: 9%; bottom: 17%; border-radius: 50%;
+.hb-before .clutter { position: absolute; border-radius: 12px; filter: blur(7px); opacity: .7; }
+.hb-before .clutter-1 { width: 24%; height: 30%; left: 4%; top: 8%; background: #5c5a57; }
+.hb-before .clutter-2 { width: 20%; height: 9%; right: 3%; top: 44%; background: #b8b1a3; border-radius: 40px; }
+.hb-before .grain { position: absolute; inset: 0; opacity: .22; mix-blend-mode: overlay; pointer-events: none; }
+.hb-before .shadow-blob {
+  position: absolute; left: 22%; width: 56%; height: 9%; top: 70%; border-radius: 50%;
   background: rgba(30, 28, 24, .45); filter: blur(10px);
 }
-.ba-before .grain {
-  position: absolute; inset: 0; opacity: .22; mix-blend-mode: overlay; pointer-events: none;
+.hb-after { background: #fff; }
+.hb-after .floor-shadow {
+  position: absolute; left: 26%; width: 46%; height: 5%; top: 73%; border-radius: 50%;
+  background: rgba(0, 0, 0, .10); filter: blur(6px);
 }
-.ba-before .product {
-  position: absolute; width: 58%; left: 24%; bottom: 17%; filter: drop-shadow(0 6px 8px rgba(0,0,0,.25));
-}
-.ba-after .ba-frame { background: #ffffff; }
-.ba-after .product {
-  position: absolute; width: 78%; left: 11%; top: 11%;
-}
-.ba-after .floor-shadow {
-  position: absolute; left: 22%; width: 48%; height: 5%; bottom: 9%; border-radius: 50%;
-  background: rgba(0,0,0,.10); filter: blur(6px);
-}
-.ba-tag {
-  position: absolute; left: 12px; top: 12px; padding: 5px 10px; border-radius: 999px;
-  font-size: 12px; font-weight: 700; letter-spacing: .02em;
-  background: rgba(20, 20, 24, .72); color: #fff;
-}
-.ba-after .ba-tag { background: #4f46e5; }
-.ba-card figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); text-align: center; }
-.ba-card figcaption strong { color: var(--text); display: block; font-size: 15px; }
-.ba-arrow {
-  width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: var(--on-accent);
-  display: grid; place-items: center; box-shadow: 0 10px 24px -10px var(--accent);
-}
-.ba-arrow svg { width: 24px; height: 24px; }
+.hero-cmp .product { position: absolute; width: 66%; left: 17%; top: 20%; }
+.hb-before .product { filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .25)); }
+.cmp-hint { margin-top: 12px; font-size: 14px; color: var(--muted); text-align: center; }
 .ba-note {
-  grid-column: 1 / -1; justify-self: center; margin-top: 8px;
-  display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 12px;
+  margin: 12px auto 0; width: fit-content; max-width: 100%;
+  display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 12px;
   background: var(--surface); border: 1px dashed var(--border-strong); font-size: 14px; color: var(--muted);
 }
 .ba-note svg { width: 18px; height: 18px; color: var(--accent); flex: none; }
@@ -455,6 +557,8 @@ section { scroll-margin-top: 76px; }
   cursor: pointer; text-decoration: underline; text-underline-offset: 3px;
 }
 .gen-out { padding: 32px; background: var(--surface-2); min-width: 0; }
+.form-slot { display: flex; flex-direction: column; min-width: 0; }
+.form-slot > .gen-form { flex: 1; }
 .gen-empty {
   display: grid; place-items: center; text-align: center; min-height: 260px; color: var(--muted);
   border: 1.5px dashed var(--border-strong); border-radius: 16px; padding: 24px; font-size: 15px;
@@ -625,8 +729,6 @@ section { scroll-margin-top: 76px; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 920px) {
-  .nav { display: none; }
-  .header-cta { margin-left: auto; }
   .g-grid { grid-template-columns: 1fr; gap: 56px; }
   .gen-wrap { grid-template-columns: 1fr; }
   .gen-form { border-right: 0; border-bottom: 1px solid var(--border); }
@@ -639,11 +741,6 @@ section { scroll-margin-top: 76px; }
   .section-head { margin-bottom: 32px; }
   .hero { padding: 40px 0 56px; }
   .hero-actions .btn { flex: 1 1 100%; }
-  .ba { grid-template-columns: 1fr; gap: 14px; margin-top: 40px; }
-  .ba-arrow { justify-self: center; transform: rotate(90deg); width: 44px; height: 44px; }
-  .ba-before .ba-frame { aspect-ratio: 4 / 3; }
-  .ba-before .product { width: 40%; left: 33%; }
-  .ba-card figcaption { margin-top: 8px; }
   .feature-grid, .price-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .gen-form, .gen-out { padding: 22px 18px; }
@@ -660,6 +757,287 @@ section { scroll-margin-top: 76px; }
 @media (max-width: 380px) {
   .logo { font-size: 20px; }
   .header-cta { font-size: 14px; padding: 0 12px; }
+}
+/* Studio */
+.studio { background: var(--surface-2); }
+.privacy-pill {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 14px; border-radius: 999px;
+  background: var(--ok-soft); color: var(--text); font-size: 14px; font-weight: 700;
+}
+.privacy-pill svg { width: 16px; height: 16px; color: var(--ok); flex: none; }
+.studio-grid {
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  grid-template-areas: "stage upload" "stage rest"; gap: 20px 32px; align-items: start;
+}
+.studio-stage { grid-area: stage; position: sticky; top: 88px; }
+.studio-upload { grid-area: upload; }
+.studio-rest { grid-area: rest; display: grid; gap: 16px; }
+.s-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; min-width: 0; }
+.s-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; letter-spacing: -0.01em; }
+.s-num {
+  width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; flex: none;
+  background: var(--accent-soft); color: var(--accent-text); font-size: 14px; font-weight: 800;
+}
+.s-card .s-help { font-size: 14px; color: var(--muted); }
+.drop {
+  border: 2px dashed var(--border-strong); border-radius: 14px; padding: 22px 18px; text-align: center;
+  background: var(--surface-2); transition: border-color .2s, background-color .2s;
+}
+.drop.is-over { border-color: var(--accent); background: var(--accent-soft); }
+.drop-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.drop p { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.drop .drop-safe { display: inline-flex; align-items: center; gap: 6px; color: var(--ok); font-weight: 700; }
+.drop .drop-safe svg { width: 15px; height: 15px; }
+.only-touch { display: none; }
+@media (pointer: coarse) { .only-touch { display: inline-flex; } }
+.s-status { margin-top: 12px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.s-status strong { color: var(--text); overflow-wrap: anywhere; }
+.s-msg { margin-top: 12px; padding: 12px 14px; border-radius: 12px; font-size: 14.5px; font-weight: 600; }
+.s-msg.bad { background: var(--bad-soft); color: var(--bad); }
+.s-msg.ok { background: var(--ok-soft); color: var(--text); }
+.s-msg.warn { background: var(--warn-soft); color: var(--text); }
+.s-msg a { color: inherit; font-weight: 800; }
+.stage-cmp { max-width: 100%; }
+.stage-cmp .cmp { box-shadow: var(--shadow); }
+.stage-busy { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(255, 255, 255, .55); color: #16161d; font-weight: 700; font-size: 15px; pointer-events: none; }
+.scenes { border: 0; margin: 16px 0 0; padding: 0; min-width: 0; }
+.scenes legend { font-size: 14px; font-weight: 700; margin-bottom: 8px; padding: 0; }
+.scene-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.scene { display: block; cursor: pointer; text-align: center; font-size: 13px; font-weight: 600; color: var(--muted); }
+.scene-thumb {
+  display: grid; place-items: center; aspect-ratio: 1; border-radius: 12px; border: 2px solid var(--border);
+  overflow: hidden; margin-bottom: 6px; transition: border-color .2s, box-shadow .2s;
+}
+.scene-thumb svg { width: 56%; }
+.scene input:checked + .scene-thumb { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
+.scene input:checked ~ .scene-name { color: var(--text); font-weight: 800; }
+.scene input:focus-visible + .scene-thumb { outline: 3px solid var(--accent); outline-offset: 2px; }
+.scene input:disabled ~ * { opacity: .45; }
+.scene:has(input:disabled) { cursor: not-allowed; }
+.t-white { background: #fff; }
+.t-blat { background: linear-gradient(180deg, #efe8de 0 64%, #e3c39d 64% 66%, #b98a5e 66% 100%); }
+.t-lazienka {
+  background:
+    linear-gradient(180deg, transparent 0 70%, #f1f1ef 70% 100%),
+    linear-gradient(90deg, #cfe0dd 0 2px, transparent 2px) 0 0 / 14px 14px,
+    linear-gradient(180deg, #cfe0dd 0 2px, transparent 2px) 0 0 / 14px 14px,
+    #e3efed;
+}
+.t-natura {
+  background:
+    radial-gradient(30% 22% at 12% 12%, #4f7a4a 0 60%, transparent 62%),
+    radial-gradient(26% 18% at 90% 20%, #5f8a55 0 60%, transparent 62%),
+    linear-gradient(180deg, #dfe8d3 0 72%, #e6dccb 72% 100%);
+}
+.scene-note { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.stage-actions { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-top: 16px; }
+.stage-actions .s-help { font-size: 13px; color: var(--muted); }
+.audit { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.audit li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); }
+.a-dot { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; }
+.a-dot svg { width: 16px; height: 16px; }
+.a-ok .a-dot { background: var(--ok-soft); color: var(--ok); }
+.a-warn .a-dot { background: var(--warn-soft); color: var(--warn); }
+.a-bad .a-dot { background: var(--bad-soft); color: var(--bad); }
+.a-head { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; font-size: 15px; }
+.a-head strong { font-weight: 700; }
+.a-val { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.a-lvl { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; margin-left: auto; }
+.a-ok .a-lvl { color: var(--ok); } .a-warn .a-lvl { color: var(--warn); } .a-bad .a-lvl { color: var(--bad); }
+.audit p { font-size: 13.5px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
+.audit-sum { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+.audit-sum strong { color: var(--text); }
+.ctrl { margin-top: 4px; }
+.ctrl + .ctrl { margin-top: 16px; }
+.ctrl-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; font-weight: 600; }
+.ctrl-row output { font-variant-numeric: tabular-nums; color: var(--accent-text); font-weight: 800; }
+input[type="range"] { width: 100%; accent-color: var(--accent); min-height: 32px; margin: 4px 0 0; }
+.switch { display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 15px; font-weight: 600; }
+.switch input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.switch-ui {
+  position: relative; width: 44px; height: 26px; border-radius: 999px; background: var(--border-strong); flex: none;
+  transition: background-color .2s;
+}
+.switch-ui::after {
+  content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3); transition: transform .2s;
+}
+.switch input:checked + .switch-ui { background: var(--accent); }
+.switch input:checked + .switch-ui::after { transform: translateX(18px); }
+.switch input:focus-visible + .switch-ui { outline: 3px solid var(--accent); outline-offset: 3px; }
+.switch small { display: block; font-weight: 500; color: var(--muted); font-size: 13px; }
+.ai-box progress {
+  width: 100%; height: 10px; margin-top: 12px; border: 0; border-radius: 999px; overflow: hidden;
+  background: var(--surface-2); accent-color: var(--accent); -webkit-appearance: none; appearance: none;
+}
+.ai-box progress::-webkit-progress-bar { background: var(--surface-2); border-radius: 999px; }
+.ai-box progress::-webkit-progress-value { background: var(--accent); border-radius: 999px; transition: width .2s; }
+.ai-box progress::-moz-progress-bar { background: var(--accent); border-radius: 999px; }
+.ai-status { margin-top: 8px; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; min-height: 1.4em; }
+.ai-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px; }
+.btn[disabled], .btn[aria-disabled="true"] { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+/* Zakładki generatora */
+.tabs {
+  display: flex; gap: 6px; padding: 6px; margin: 0 auto 24px; width: fit-content; max-width: 100%;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px;
+}
+.tab {
+  min-height: 44px; padding: 0 18px; border-radius: 10px; border: 0; background: transparent;
+  font: 700 15px/1.2 var(--font); color: var(--muted); cursor: pointer; transition: background-color .2s, color .2s;
+}
+.tab:hover { color: var(--text); }
+.tab[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow-sm); }
+.gen-panel[hidden] { display: none; }
+.check-count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.check-count.over { color: var(--bad); font-weight: 700; }
+.score { display: flex; gap: 18px; align-items: center; margin-bottom: 18px; }
+.score-ring {
+  --v: 0; --c: var(--ok);
+  width: 88px; height: 88px; border-radius: 50%; flex: none; display: grid; place-items: center;
+  background: conic-gradient(var(--c) calc(var(--v) * 1%), var(--border) 0);
+}
+.score-ring span {
+  width: 70px; height: 70px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center;
+  font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.03em;
+}
+.score-ring.mid { --c: var(--warn); } .score-ring.low { --c: var(--bad); }
+.score h4 { margin: 0; font-size: 18px; }
+.score p { font-size: 14px; color: var(--muted); }
+.fix-box { margin-top: 16px; }
+.desc-preview {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px;
+  font-size: 15.5px; overflow-wrap: anywhere; animation: pop .35s ease both;
+}
+.desc-preview h4 { font-size: 18px; margin: 0 0 10px; line-height: 1.3; }
+.desc-preview h5 { font-size: 15px; margin: 14px 0 4px; }
+.desc-preview ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.desc-preview .ph { color: var(--warn); font-style: italic; }
+.desc-tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 12px; }
+.desc-tools .copy-btn { margin-left: 0; }
+
+/* Porównanie */
+.vs-wrap {
+  position: relative; overflow-x: auto; border: 1px solid var(--border); border-radius: 18px; background: var(--surface);
+  box-shadow: var(--shadow-sm); -webkit-overflow-scrolling: touch;
+}
+.vs-wrap:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.vs { width: 100%; min-width: 760px; border-collapse: separate; border-spacing: 0; font-size: 15px; }
+.vs caption { text-align: left; padding: 0; }
+.vs th, .vs td { padding: 14px 14px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+.vs tbody tr:last-child th, .vs tbody tr:last-child td { border-bottom: 0; }
+.vs thead th { font-size: 14px; font-weight: 800; background: var(--surface-2); }
+.vs th[scope="row"] { text-align: left; font-weight: 600; position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 190px; width: 26%; }
+.vs thead th:not(:first-child) { width: 18.5%; }
+.vs thead th:first-child { position: sticky; left: 0; z-index: 2; }
+.vs .col-kadr { background: color-mix(in srgb, var(--accent-soft) 70%, var(--surface)); }
+.vs thead .col-kadr { background: var(--accent); color: var(--on-accent); }
+.mark { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12.5px; color: var(--muted); line-height: 1.3; }
+.mark svg { width: 22px; height: 22px; }
+.mark.yes svg { color: var(--ok); } .mark.part svg { color: var(--warn); } .mark.no svg { color: var(--bad); } .mark.na svg { color: var(--border-strong); }
+.mark.soon svg { color: var(--accent-text); }
+.vs-time { font-weight: 700; font-size: 14px; }
+.vs-note { margin-top: 14px; font-size: 13.5px; color: var(--muted); text-align: center; }
+
+/* Kalkulator */
+.calc {
+  display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.6fr); border-radius: 24px; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
+}
+.calc-in { padding: 28px; border-right: 1px solid var(--border); display: grid; gap: 22px; align-content: start; }
+.calc-in fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.calc-in legend, .calc-label { font-size: 15px; font-weight: 700; margin-bottom: 8px; padding: 0; display: block; }
+.calc-big { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.calc-big small { font-size: 15px; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.seg label { cursor: pointer; }
+.seg input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.seg span {
+  display: block; padding: 12px; border-radius: 12px; border: 1.5px solid var(--border-strong); text-align: center;
+  font-weight: 700; font-size: 15px; transition: border-color .2s, background-color .2s;
+}
+.seg span small { display: block; font-weight: 500; color: var(--muted); font-size: 12.5px; }
+.seg input:checked + span { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-text); }
+.seg input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+.calc-photos { font-size: 14px; color: var(--muted); }
+.calc-photos strong { color: var(--text); }
+.calc-out { padding: 28px; background: var(--surface-2); min-width: 0; }
+.paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.path { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.path h3 { font-size: 15px; font-weight: 700; color: var(--muted); letter-spacing: 0; }
+.path .cost { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.2; overflow-wrap: anywhere; }
+.path .cost small { display: block; font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: 0; }
+.path .time { font-size: 14px; font-weight: 600; }
+.path .how { font-size: 13px; color: var(--muted); line-height: 1.45; }
+.path-kadr { border: 2px solid var(--accent); background: linear-gradient(180deg, var(--accent-soft), var(--surface) 60%); }
+.path-kadr h3 { color: var(--accent-text); }
+.path-kadr .btn { margin-top: auto; }
+.save {
+  margin-top: 14px; padding: 14px 16px; border-radius: 14px; background: var(--ok-soft); font-size: 15px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.save svg { width: 20px; height: 20px; color: var(--ok); flex: none; margin-top: 2px; }
+.calc-disc { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.plan.is-picked { outline: 3px solid var(--accent); outline-offset: 4px; animation: picked 1.1s ease 2; }
+@keyframes picked { 50% { outline-offset: 10px; } }
+.plan h3[tabindex]:focus { outline: none; }
+
+/* Poradnik */
+.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.guide {
+  display: flex; flex-direction: column; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border);
+  text-decoration: none; color: var(--text); overflow: hidden; transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.guide:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--border-strong); }
+.guide-art { aspect-ratio: 16 / 9; display: grid; place-items: center; background: var(--surface-2); border-bottom: 1px solid var(--border); }
+.guide-art svg { width: 46%; height: auto; }
+.guide-body { padding: 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.guide h3 { font-size: 19px; font-weight: 700; }
+.guide p { color: var(--muted); font-size: 15px; }
+.guide .more { margin-top: auto; padding-top: 6px; font-weight: 700; color: var(--accent-text); font-size: 15px; }
+
+/* Pasek CTA na telefonie */
+.mcta { display: none; }
+@media (max-width: 640px) {
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .mcta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: flex; align-items: center; gap: 12px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border); box-shadow: 0 -8px 24px -16px rgba(0, 0, 0, .35);
+    transform: translateY(110%); visibility: hidden; transition: transform .25s ease, visibility .25s;
+  }
+  .mcta.show { transform: none; visibility: visible; }
+  .mcta p { font-size: 13px; line-height: 1.3; color: var(--muted); flex: 1; min-width: 0; }
+  .mcta p strong { color: var(--text); display: block; font-size: 14px; }
+  .mcta .btn { flex: none; }
+}
+
+/* Responsywność nowych sekcji */
+@media (max-width: 1040px) {
+  .nav { display: none; }
+  .header-cta { margin-left: auto; }
+}
+@media (max-width: 920px) {
+  .studio-grid { grid-template-columns: 1fr; grid-template-areas: "upload" "stage" "rest"; }
+  .studio-stage { position: static; max-width: 560px; width: 100%; justify-self: center; }
+  .calc { grid-template-columns: 1fr; }
+  .calc-in { border-right: 0; border-bottom: 1px solid var(--border); }
+  .guide-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
+}
+@media (max-width: 640px) {
+  .hero-cmp { margin-top: 40px; }
+  .paths { grid-template-columns: 1fr; }
+  .calc-in, .calc-out { padding: 22px 18px; }
+  .tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .tab { padding: 6px 6px; font-size: 14px; }
+  .s-card { padding: 16px; }
+  .scene-list { gap: 8px; }
+  .vs th[scope="row"] { min-width: 140px; }
+  .vs { min-width: 680px; font-size: 14px; }
+  .score-ring { width: 76px; height: 76px; }
+  .score-ring span { width: 60px; height: 60px; font-size: 22px; }
 }
 </style>
 </head>
@@ -704,6 +1082,15 @@ section { scroll-margin-top: 76px; }
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></g></symbol>
+    <symbol id="i-yes" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-no" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 5v9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="12" cy="19" r="1.8" fill="currentColor"/></symbol>
+    <symbol id="i-part" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></symbol>
+    <symbol id="i-na" viewBox="0 0 24 24"><path d="M6 12h12" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></g></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13.5" r="3.5"/></g></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></g></symbol>
   </defs>
 </svg>
@@ -717,14 +1104,15 @@ section { scroll-margin-top: 76px; }
       Kadr
     </a>
     <nav class="nav" aria-label="Główna nawigacja">
-      <a href="#jak-to-dziala">Jak to działa</a>
+      <a href="#studio">Studio</a>
       <a href="#funkcje">Funkcje</a>
       <a href="#gwarancja">Gwarancja</a>
-      <a href="#generator">Generator tytułów</a>
+      <a href="#generator">Generator</a>
       <a href="#cennik">Cennik</a>
+      <a href="#poradnik">Poradnik</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-sm header-cta" href="#generator">Wypróbuj za darmo</a>
+    <a class="btn btn-sm header-cta" href="#studio">Wypróbuj za darmo</a>
   </div>
 </header>
 
@@ -734,12 +1122,12 @@ section { scroll-margin-top: 76px; }
   <section class="hero" aria-labelledby="hero-title">
     <div class="container">
       <div class="hero-copy">
-        <span class="pill"><b>Nowość</b> Darmowy generator tytułów Allegro — bez logowania</span>
+        <span class="pill"><b>Nowość</b> Darmowe studio zdjęć w przeglądarce — bez logowania</span>
         <h1 id="hero-title">Zdjęcie z telefonu <span class="arrow" aria-hidden="true">→</span><span class="sr-only">, a z niego</span> oferta gotowa na Allegro <span class="hl">w&nbsp;60&nbsp;sekund</span></h1>
         <p class="hero-sub">Kadr wycina produkt z Twojego zdjęcia, kładzie go na białym tle i w aranżacjach, a do tego pisze tytuł do 75 znaków, parametry i opis pod wyszukiwarkę Allegro. Po polsku, z płatnością BLIK.</p>
         <div class="hero-actions">
-          <a class="btn" href="#generator">Wypróbuj za darmo</a>
-          <a class="btn btn-ghost" href="#jak-to-dziala">Zobacz, jak działa</a>
+          <a class="btn" href="#studio">Wypróbuj za darmo</a>
+          <a class="btn btn-ghost" href="#studio" data-focus="studio-pick">Wgraj swoje zdjęcie</a>
         </div>
         <ul class="hero-meta">
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>3 zdjęcia za darmo</li>
@@ -748,30 +1136,134 @@ section { scroll-margin-top: 76px; }
         </ul>
       </div>
 
-      <div class="ba" role="group" aria-label="Przykład: zdjęcie przed i po obróbce w Kadrze">
-        <figure class="ba-card ba-before">
-          <div class="ba-frame">
-            <span class="clutter clutter-1" aria-hidden="true"></span>
-            <span class="clutter clutter-2" aria-hidden="true"></span>
-            <svg class="grain" aria-hidden="true" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#grainF)"/></svg>
-            <span class="shadow-blob" aria-hidden="true"></span>
-            <svg class="product" viewBox="0 0 220 200" role="img" aria-label="Turkusowy kubek na szarym, nierównym tle"><use href="#mug"/></svg>
-            <span class="ba-tag">Przed</span>
+      <div class="hero-cmp" role="group" aria-labelledby="hero-cmp-desc">
+        <p class="sr-only" id="hero-cmp-desc">Przykład: ten sam turkusowy kubek na zdjęciu z telefonu (szare, nierówne tło) i po obróbce w Kadrze (czyste białe tło). Suwak odsłania jedno albo drugie zdjęcie.</p>
+        <div class="cmp" data-compare>
+          <div class="cmp-layer hb-after" aria-hidden="true">
+            <span class="floor-shadow"></span>
+            <svg class="product" viewBox="0 0 220 200"><use href="#mug"/></svg>
           </div>
-          <figcaption><strong>Zdjęcie z telefonu</strong>Szare tło, cień, bałagan w kadrze</figcaption>
-        </figure>
-        <div class="ba-arrow" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <div class="cmp-layer cmp-before hb-before" aria-hidden="true">
+            <span class="clutter clutter-1"></span>
+            <span class="clutter clutter-2"></span>
+            <svg class="grain" width="100%" height="100%"><rect width="100%" height="100%" filter="url(#grainF)"/></svg>
+            <span class="shadow-blob"></span>
+            <svg class="product" viewBox="0 0 220 200"><use href="#mug"/></svg>
+          </div>
+          <span class="cmp-tag cmp-tag-l" aria-hidden="true">Przed</span>
+          <span class="cmp-tag cmp-tag-r" aria-hidden="true">Po · 2560×2560</span>
+          <span class="cmp-line" aria-hidden="true"></span>
+          <div class="cmp-handle" role="slider" tabindex="0" aria-label="Porównanie: zdjęcie przed i po obróbce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50 procent" aria-orientation="horizontal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </div>
         </div>
-        <figure class="ba-card ba-after">
-          <div class="ba-frame">
-            <span class="floor-shadow" aria-hidden="true"></span>
-            <svg class="product" viewBox="0 0 220 200" role="img" aria-label="Ten sam turkusowy kubek na czystym białym tle"><use href="#mug"/></svg>
-            <span class="ba-tag">Po</span>
-          </div>
-          <figcaption><strong>2560×2560, zdjęcie główne Allegro</strong>Białe tło, produkt wypełnia kadr, JPG</figcaption>
-        </figure>
+        <p class="cmp-hint">Przeciągnij suwak albo użyj strzałek na klawiaturze.</p>
         <p class="ba-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Ten sam kubek, ten sam kolor, ten sam odprysk przy brzegu. Zmieniliśmy tylko tło.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO DEMO -->
+  <section class="section studio" id="studio" aria-labelledby="studio-title">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Studio demo · za darmo, bez logowania</span>
+        <h2 id="studio-title">Sprawdź i popraw swoje zdjęcie od razu</h2>
+        <p>Audyt pod wymagania Allegro, kwadrat 2560×2560 na białym tle, wycinanie tła AI i aranżacje — wszystko w Twojej przeglądarce.</p>
+        <p class="privacy-pill"><svg aria-hidden="true"><use href="#i-lock"/></svg>Zdjęcie nie opuszcza Twojego urządzenia</p>
+      </div>
+
+      <div class="studio-grid">
+        <!-- 1. Wgrywanie -->
+        <div class="s-card studio-upload">
+          <h3><span class="s-num" aria-hidden="true">1</span>Wgraj zdjęcie produktu</h3>
+          <div class="drop" id="studio-drop">
+            <div class="drop-actions">
+              <button class="btn" type="button" id="studio-pick"><svg width="18" height="18" aria-hidden="true"><use href="#i-upload"/></svg>Wybierz zdjęcie</button>
+              <button class="btn btn-ghost only-touch" type="button" id="studio-shoot"><svg width="18" height="18" aria-hidden="true"><use href="#i-camera"/></svg>Zrób zdjęcie</button>
+            </div>
+            <p>albo przeciągnij plik tutaj lub wklej ze schowka (Ctrl+V)<br>JPG, PNG, WebP lub HEIC, do 20 MB</p>
+            <p><span class="drop-safe"><svg aria-hidden="true"><use href="#i-lock"/></svg>Zdjęcie nie opuszcza Twojego urządzenia</span></p>
+            <input type="file" id="studio-file" accept="image/*,.heic,.heif" hidden>
+            <input type="file" id="studio-camera" accept="image/*" capture="environment" hidden>
+          </div>
+          <div class="s-status" id="studio-status" aria-live="polite">
+            <span>Teraz: <strong id="studio-src-name">przykładowy kubek na szarym tle</strong></span>
+            <button class="link-btn" type="button" id="studio-reset" hidden>Wróć do przykładu</button>
+          </div>
+          <div id="studio-error" role="alert"></div>
+        </div>
+
+        <!-- Podgląd -->
+        <div class="studio-stage">
+          <div class="stage-cmp" role="group" aria-label="Podgląd: przed i po">
+            <div class="cmp" data-compare id="studio-cmp">
+              <div class="cmp-layer"><canvas id="cv-after" width="1024" height="1024" role="img" aria-label="Wynik: produkt w kwadratowym kadrze"></canvas></div>
+              <div class="cmp-layer cmp-before"><canvas id="cv-before" width="1024" height="1024" role="img" aria-label="Oryginalne zdjęcie w tym samym kadrze"></canvas></div>
+              <span class="cmp-tag cmp-tag-l" aria-hidden="true">Przed</span>
+              <span class="cmp-tag cmp-tag-r" aria-hidden="true" id="studio-tag-after">Po</span>
+              <span class="cmp-line" aria-hidden="true"></span>
+              <div class="cmp-handle" role="slider" tabindex="0" aria-label="Porównanie podglądu: przed i po" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50 procent" aria-orientation="horizontal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg>
+              </div>
+              <div class="stage-busy" id="stage-busy" hidden>Przetwarzam…</div>
+            </div>
+          </div>
+
+          <fieldset class="scenes">
+            <legend>Tło i aranżacja</legend>
+            <div class="scene-list">
+              <label class="scene"><input class="sr-only" type="radio" name="scene" value="white" checked><span class="scene-thumb t-white" aria-hidden="true"><svg viewBox="0 0 220 200"><use href="#mug"/></svg></span><span class="scene-name">Białe</span></label>
+              <label class="scene"><input class="sr-only" type="radio" name="scene" value="blat"><span class="scene-thumb t-blat" aria-hidden="true"><svg viewBox="0 0 220 200"><use href="#mug"/></svg></span><span class="scene-name">Blat kuchenny</span></label>
+              <label class="scene"><input class="sr-only" type="radio" name="scene" value="lazienka"><span class="scene-thumb t-lazienka" aria-hidden="true"><svg viewBox="0 0 220 200"><use href="#mug"/></svg></span><span class="scene-name">Łazienka</span></label>
+              <label class="scene"><input class="sr-only" type="radio" name="scene" value="natura"><span class="scene-thumb t-natura" aria-hidden="true"><svg viewBox="0 0 220 200"><use href="#mug"/></svg></span><span class="scene-name">Natura</span></label>
+            </div>
+          </fieldset>
+          <p class="scene-note" id="scene-note">Tła w demo są uproszczone; w pełnej wersji generujemy fotorealistyczne sceny. Na zdjęcie główne Allegro wybierz białe tło, aranżacje dodaj jako zdjęcia dodatkowe.</p>
+
+          <div class="stage-actions">
+            <button class="btn" type="button" id="studio-download"><svg width="18" height="18" aria-hidden="true"><use href="#i-download"/></svg><span>Pobierz JPG</span></button>
+            <span class="s-help" id="studio-file-hint">kadr-allegro-2560.jpg · 2560×2560 · bez znaku wodnego</span>
+          </div>
+          <div id="studio-dl-msg" aria-live="polite"></div>
+        </div>
+
+        <div class="studio-rest">
+          <!-- 2. Audyt -->
+          <div class="s-card">
+            <h3><span class="s-num" aria-hidden="true">2</span><span id="audit-title">Audyt zdjęcia pod Allegro</span></h3>
+            <div id="audit" aria-live="polite"></div>
+          </div>
+
+          <!-- 3. Wycinanie AI -->
+          <div class="s-card ai-box">
+            <h3><span class="s-num" aria-hidden="true">3</span>Wytnij tło (AI w przeglądarce)</h3>
+            <p class="s-help">Model AI działa na Twoim urządzeniu. Pierwsze uruchomienie pobiera model AI (ok. 40–80 MB), potem działa z pamięci przeglądarki.</p>
+            <div class="ai-actions">
+              <button class="btn" type="button" id="ai-btn" disabled>Wytnij tło</button>
+              <span class="s-help" id="ai-hint">Wgraj swoje zdjęcie, żeby wypróbować. Przykładowy kubek to grafika, więc jego tło jest już wycięte.</span>
+            </div>
+            <div id="ai-progress-wrap" hidden>
+              <progress id="ai-progress" max="100" value="0" aria-labelledby="ai-status"></progress>
+              <p class="ai-status" id="ai-status" aria-live="polite"></p>
+            </div>
+            <div id="ai-msg" role="status"></div>
+          </div>
+
+          <!-- 4. Kadr -->
+          <div class="s-card">
+            <h3><span class="s-num" aria-hidden="true">4</span>Kadr pod Allegro</h3>
+            <p class="s-help">Dopełniamy zdjęcie do kwadratu białym tłem i eksportujemy JPG 2560×2560. Bez znaku wodnego — to zwykła obróbka w przeglądarce, bez AI.</p>
+            <div class="ctrl" style="margin-top:14px">
+              <div class="ctrl-row"><label for="s-margin">Margines wokół produktu</label><output id="s-margin-out" for="s-margin">8 %</output></div>
+              <input type="range" id="s-margin" min="0" max="15" step="1" value="8" aria-describedby="s-margin-help">
+              <p class="s-help" id="s-margin-help" style="font-size:13px">Allegro lubi, gdy produkt wypełnia kadr — zwykle wystarcza 5–10 %.</p>
+            </div>
+            <div class="ctrl">
+              <label class="switch"><input type="checkbox" role="switch" id="s-auto"><span class="switch-ui" aria-hidden="true"></span><span>Auto-jasność<small>Rozciąga jasność i kontrast, nie zmienia kolorów produktu.</small></span></label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -799,7 +1291,7 @@ section { scroll-margin-top: 76px; }
           <div class="step-num" aria-hidden="true">1</div>
           <h3>Wgraj zdjęcie</h3>
           <p>Zrób zdjęcie telefonem — na biurku, na podłodze, gdziekolwiek. Wgraj je przez przeglądarkę.</p>
-          <div class="step-chips"><span class="chip">JPG</span><span class="chip">PNG</span><span class="chip">Z telefonu lub komputera</span></div>
+          <div class="step-chips"><span class="chip">JPG, PNG, WebP, HEIC</span><span class="chip">Z telefonu lub komputera</span></div>
         </li>
         <li class="step reveal">
           <div class="step-num" aria-hidden="true">2</div>
@@ -890,7 +1382,7 @@ section { scroll-margin-top: 76px; }
             <li><svg aria-hidden="true"><use href="#i-lock"/></svg><div><strong>Logo i napisy</strong><span>Marka na produkcie zostaje nietknięta.</span></div></li>
             <li><svg aria-hidden="true"><use href="#i-lock"/></svg><div><strong>Stan i ślady użytkowania</strong><span>Rysy i przetarcia są widoczne, tak jak w rzeczywistości.</span></div></li>
           </ul>
-          <p class="g-only"><strong>Zmieniamy tylko dwie rzeczy: tło i światło.</strong></p>
+          <p class="g-only"><strong>Zmieniamy tylko dwie rzeczy: tło i światło.</strong> Nie trenujemy modeli na Twoich zdjęciach.</p>
           <div class="g-compliance">
             <div>
               <h3>Zgodnie z regulaminem Allegro</h3>
@@ -917,88 +1409,278 @@ section { scroll-margin-top: 76px; }
   <section class="section" id="generator" aria-labelledby="gen-title">
     <div class="container">
       <div class="section-head center reveal">
-        <span class="eyebrow">Darmowe narzędzie</span>
-        <h2 id="gen-title">Generator tytułów Allegro</h2>
-        <p>Wpisz dane produktu i dostań 3 propozycje tytułu do 75 znaków oraz listę parametrów do uzupełnienia w ofercie. Bez logowania, działa w Twojej przeglądarce.</p>
+        <span class="eyebrow">Darmowe narzędzia</span>
+        <h2 id="gen-title">Tytuł i opis oferty Allegro</h2>
+        <p>Wygeneruj 3 propozycje tytułu do 75 znaków z parametrami, sprawdź tytuł, który już masz, albo napisz gotowy opis. Bez logowania, działa w Twojej przeglądarce.</p>
       </div>
 
-      <div class="gen-wrap reveal">
-        <form class="gen-form" id="gen-form" novalidate>
-          <h3>Dane produktu</h3>
-          <div class="form-grid">
-            <div class="field full">
-              <label for="f-name">Nazwa produktu</label>
-              <input class="input" id="f-name" name="name" type="text" maxlength="60" placeholder="np. Kubek ceramiczny" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="f-brand">Marka <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-brand" name="brand" type="text" maxlength="40" placeholder="np. Glinka" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="f-model">Model / typ <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-model" name="model" type="text" maxlength="40" placeholder="np. Baryłka" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="f-color">Kolor <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-color" name="color" type="text" maxlength="30" placeholder="np. turkusowy" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="f-size">Rozmiar / pojemność <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-size" name="size" type="text" maxlength="30" placeholder="np. 350 ml" autocomplete="off">
-            </div>
-            <div class="field">
-              <label for="f-cond">Stan</label>
-              <select class="select" id="f-cond" name="cond">
-                <option value="Nowy">Nowy</option>
-                <option value="Używany">Używany</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-feat1">Cecha 1 <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-feat1" name="feat1" type="text" maxlength="40" placeholder="np. ręcznie malowany" autocomplete="off">
-            </div>
-            <div class="field full">
-              <label for="f-feat2">Cecha 2 <span class="opt">(opcjonalnie)</span></label>
-              <input class="input" id="f-feat2" name="feat2" type="text" maxlength="40" placeholder="np. do zmywarki" autocomplete="off">
-            </div>
-          </div>
-          <div class="gen-actions">
-            <button class="btn" type="submit" id="gen-btn">Wygeneruj</button>
-            <button class="link-btn" type="button" id="gen-example">Wstaw przykład</button>
-          </div>
-        </form>
+      <div class="tabs" role="tablist" aria-label="Narzędzia do tytułu i opisu">
+        <button class="tab" type="button" role="tab" id="tab-title" aria-controls="panel-title" aria-selected="true">Wygeneruj tytuł</button>
+        <button class="tab" type="button" role="tab" id="tab-check" aria-controls="panel-check" aria-selected="false" tabindex="-1">Sprawdź tytuł</button>
+        <button class="tab" type="button" role="tab" id="tab-desc" aria-controls="panel-desc" aria-selected="false" tabindex="-1">Napisz opis</button>
+      </div>
 
-        <div class="gen-out">
-          <h3>Propozycje tytułów</h3>
-          <div id="gen-result" aria-live="polite" aria-atomic="true">
-            <div class="gen-empty">
-              <div>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
-                Uzupełnij przynajmniej nazwę produktu i kliknij „Wygeneruj”.<br>Tytuły pojawią się tutaj.
-              </div>
-            </div>
-          </div>
-
-          <div class="lead-box" id="lead-box" hidden>
-            <h4>Zapisz wynik i odbierz 3 darmowe zdjęcia</h4>
-            <p>Wyślemy Ci te tytuły i parametry na e-mail oraz dostęp do 3 darmowych zdjęć w Kadrze.</p>
-            <form id="lead-form" novalidate>
-              <div class="lead-row">
-                <div class="field">
-                  <label for="lead-email">Adres e-mail</label>
-                  <input class="input" id="lead-email" name="email" type="email" required autocomplete="email" placeholder="ty@twojsklep.pl" aria-describedby="lead-error">
+      <!-- Zakładka 1: tytuły -->
+      <div class="gen-panel" role="tabpanel" id="panel-title" aria-labelledby="tab-title" tabindex="0">
+        <div class="gen-wrap reveal">
+          <div class="form-slot" id="slot-title">
+            <form class="gen-form" id="gen-form" novalidate>
+              <h3>Dane produktu</h3>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="f-name">Nazwa produktu</label>
+                  <input class="input" id="f-name" name="name" type="text" maxlength="60" placeholder="np. Kubek ceramiczny" autocomplete="off">
                 </div>
-                <button class="btn" type="submit">Zapisz wynik</button>
+                <div class="field">
+                  <label for="f-brand">Marka <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-brand" name="brand" type="text" maxlength="40" placeholder="np. Glinka" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-model">Model / typ <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-model" name="model" type="text" maxlength="40" placeholder="np. Baryłka" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-color">Kolor <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-color" name="color" type="text" maxlength="30" placeholder="np. turkusowy" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-size">Rozmiar / pojemność <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-size" name="size" type="text" maxlength="30" placeholder="np. 350 ml" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-cond">Stan</label>
+                  <select class="select" id="f-cond" name="cond">
+                    <option value="Nowy">Nowy</option>
+                    <option value="Używany">Używany</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-feat1">Cecha 1 <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-feat1" name="feat1" type="text" maxlength="40" placeholder="np. ręcznie malowany" autocomplete="off">
+                </div>
+                <div class="field full">
+                  <label for="f-feat2">Cecha 2 <span class="opt">(opcjonalnie)</span></label>
+                  <input class="input" id="f-feat2" name="feat2" type="text" maxlength="40" placeholder="np. do zmywarki" autocomplete="off">
+                </div>
               </div>
-              <label class="lead-consent"><input type="checkbox" id="lead-consent" name="consent" required> <span>Zgadzam się na otrzymanie wyniku i informacji o Kadrze na podany adres e-mail. Administratorem danych jest Kadr. Zgodę mogę wycofać w każdej chwili.</span></label>
-              <p class="field-error" id="lead-error" role="alert"></p>
-              <p class="lead-small">Użyjemy adresu tylko do wysłania wyniku i informacji o Kadrze. Szczegóły w <a href="#">Polityce prywatności</a>.</p>
+              <div class="gen-actions">
+                <button class="btn" type="submit" id="gen-btn">Wygeneruj</button>
+                <button class="link-btn" type="button" id="gen-example">Wstaw przykład</button>
+              </div>
             </form>
-            <div class="lead-thanks" id="lead-thanks" hidden tabindex="-1">
-              <svg aria-hidden="true"><use href="#i-check"/></svg>
-              <div><strong>Dziękujemy!</strong> Zapisaliśmy Twój adres. Wynik i dostęp do 3 darmowych zdjęć wyślemy na <span id="lead-thanks-email"></span>.</div>
+          </div>
+
+          <div class="gen-out">
+            <h3>Propozycje tytułów</h3>
+            <div id="gen-result" aria-live="polite" aria-atomic="true">
+              <div class="gen-empty">
+                <div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+                  Uzupełnij przynajmniej nazwę produktu i kliknij „Wygeneruj”.<br>Tytuły pojawią się tutaj.
+                </div>
+              </div>
+            </div>
+
+            <div class="lead-box" id="lead-box" hidden>
+              <h4>Zapisz wynik i odbierz 3 darmowe zdjęcia</h4>
+              <p>Wyślemy Ci te tytuły i parametry na e-mail oraz dostęp do 3 darmowych zdjęć w Kadrze.</p>
+              <form id="lead-form" novalidate>
+                <div class="lead-row">
+                  <div class="field">
+                    <label for="lead-email">Adres e-mail</label>
+                    <input class="input" id="lead-email" name="email" type="email" required autocomplete="email" placeholder="ty@twojsklep.pl" aria-describedby="lead-error">
+                  </div>
+                  <button class="btn" type="submit">Zapisz wynik</button>
+                </div>
+                <label class="lead-consent"><input type="checkbox" id="lead-consent" name="consent" required> <span>Zgadzam się na otrzymanie wyniku i informacji o Kadrze na podany adres e-mail. Administratorem danych jest Kadr. Zgodę mogę wycofać w każdej chwili.</span></label>
+                <p class="field-error" id="lead-error" role="alert"></p>
+                <p class="lead-small">Użyjemy adresu tylko do wysłania wyniku i informacji o Kadrze. Szczegóły w <a href="#">Polityce prywatności</a>.</p>
+              </form>
+              <div class="lead-thanks" id="lead-thanks" hidden tabindex="-1">
+                <svg aria-hidden="true"><use href="#i-check"/></svg>
+                <div><strong>Dziękujemy!</strong> Zapisaliśmy Twój adres. Wynik i dostęp do 3 darmowych zdjęć wyślemy na <span id="lead-thanks-email"></span>.</div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Zakładka 2: sprawdzanie tytułu -->
+      <div class="gen-panel" role="tabpanel" id="panel-check" aria-labelledby="tab-check" tabindex="0" hidden>
+        <div class="gen-wrap">
+          <form class="gen-form" id="check-form" novalidate>
+            <h3>Twój tytuł</h3>
+            <div class="field">
+              <div class="ctrl-row"><label for="check-input">Wklej tytuł oferty</label><span class="check-count" id="check-count" aria-live="polite">0/75</span></div>
+              <input class="input" id="check-input" name="title" type="text" maxlength="200" placeholder="np. Kubek ceramiczny Glinka turkusowy 350 ml" autocomplete="off">
+            </div>
+            <div class="gen-actions">
+              <button class="btn" type="submit" id="check-btn">Sprawdź tytuł</button>
+              <button class="link-btn" type="button" id="check-example">Wstaw słaby przykład</button>
+            </div>
+            <p class="params-hint" style="margin-top:16px">Sprawdzamy długość, wielkie litery, wykrzykniki, emoji, powtórzenia, słowa-wypełniacze, dane kontaktowe oraz to, czy w tytule widać markę i kolor.</p>
+          </form>
+          <div class="gen-out">
+            <h3>Wynik</h3>
+            <div id="check-result" aria-live="polite" aria-atomic="true">
+              <div class="gen-empty"><div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                Wklej tytuł i kliknij „Sprawdź tytuł”.<br>Dostaniesz wynik 0–100 i listę poprawek.
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zakładka 3: opis -->
+      <div class="gen-panel" role="tabpanel" id="panel-desc" aria-labelledby="tab-desc" tabindex="0" hidden>
+        <div class="gen-wrap">
+          <div class="form-slot" id="slot-desc"></div>
+          <div class="gen-out">
+            <h3>Gotowy opis oferty</h3>
+            <div id="desc-result" aria-live="polite" aria-atomic="true">
+              <div class="gen-empty"><div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>
+                Uzupełnij dane produktu i kliknij „Napisz opis”.<br>Opis pojawi się tutaj.
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORÓWNANIE -->
+  <section class="section" id="porownanie" aria-labelledby="vs-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Porównanie</span>
+        <h2 id="vs-title">Kadr a inne sposoby</h2>
+        <p>Zagraniczne narzędzia „usuń tło AI” zajmują się samym zdjęciem. Sprzedawca na Allegro potrzebuje całej oferty — po polsku i z fakturą.</p>
+      </div>
+      <div class="vs-wrap reveal" role="region" aria-labelledby="vs-title" tabindex="0">
+        <table class="vs">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only">Funkcja</span></th>
+              <th scope="col" class="col-kadr">Kadr</th>
+              <th scope="col">Zagraniczne narzędzia AI</th>
+              <th scope="col">Fotograf</th>
+              <th scope="col">Samodzielnie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Polski interfejs i wsparcie</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>częściowo<span class="sr-only">: interfejs bywa po polsku, wsparcie zwykle po angielsku</span></span></td>
+              <td><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark na"><svg aria-hidden="true"><use href="#i-na"/></svg>nie dotyczy</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Tytuł i parametry pod Allegro</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark no"><svg aria-hidden="true"><use href="#i-no"/></svg><span class="sr-only">Nie</span></span></td>
+              <td><span class="mark no"><svg aria-hidden="true"><use href="#i-no"/></svg><span class="sr-only">Nie</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>piszesz sam<span class="sr-only"> (częściowo)</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">BLIK i faktura VAT</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>zwykle tylko karta<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>zależy od fotografa<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark na"><svg aria-hidden="true"><use href="#i-na"/></svg>nie dotyczy</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Cena w złotówkach</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>często w USD lub EUR<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg>płacisz czasem<span class="sr-only"> (tak)</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Komplet 5 ujęć z jednego zdjęcia</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg>Sklep i Pro<span class="sr-only"> (tak)</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>pojedyncze ujęcia<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>każde ujęcie płatne<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>każde ujęcie osobno<span class="sr-only"> (częściowo)</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Gwarancja prawdziwego produktu</th>
+              <td class="col-kadr"><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg>tylko tło i światło<span class="sr-only"> (tak)</span></span></td>
+              <td><span class="mark part"><svg aria-hidden="true"><use href="#i-part"/></svg>zależy od narzędzia<span class="sr-only"> (częściowo)</span></span></td>
+              <td><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+              <td><span class="mark yes"><svg aria-hidden="true"><use href="#i-yes"/></svg><span class="sr-only">Tak</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Eksport do Allegro</th>
+              <td class="col-kadr"><span class="mark soon"><svg aria-hidden="true"><use href="#i-clock"/></svg>wkrótce</span></td>
+              <td><span class="mark no"><svg aria-hidden="true"><use href="#i-no"/></svg><span class="sr-only">Nie</span></span></td>
+              <td><span class="mark no"><svg aria-hidden="true"><use href="#i-no"/></svg><span class="sr-only">Nie</span></span></td>
+              <td><span class="mark no"><svg aria-hidden="true"><use href="#i-no"/></svg>ręcznie<span class="sr-only"> (nie)</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Czas na jedną ofertę</th>
+              <td class="col-kadr"><span class="vs-time">ok. 1 min</span></td>
+              <td><span class="vs-time">kilka minut</span><br><span class="mark">+ tytuł i opis osobno</span></td>
+              <td><span class="vs-time">kilka dni</span><br><span class="mark">termin sesji i obróbka</span></td>
+              <td><span class="vs-time">ok. 15 min</span><br><span class="mark">na zdjęcie, plus tekst</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="vs-note">Porównanie ogólne, na podstawie typowych ofert usług tego rodzaju. Konkretne narzędzia i fotografowie mogą działać inaczej.</p>
+    </div>
+  </section>
+
+  <!-- KALKULATOR -->
+  <section class="section features" id="kalkulator" aria-labelledby="calc-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Kalkulator</span>
+        <h2 id="calc-title">Ile zaoszczędzisz na zdjęciach?</h2>
+        <p>Ustaw, ile produktów wystawiasz w miesiącu, a porównamy koszt i czas trzech sposobów.</p>
+      </div>
+      <div class="calc reveal">
+        <form class="calc-in" id="calc-form" onsubmit="return false">
+          <div>
+            <label class="calc-label" for="calc-n">Ile produktów wystawiasz miesięcznie?</label>
+            <p class="calc-big"><output id="calc-n-out" for="calc-n">40</output> <small>produktów / mies.</small></p>
+            <input type="range" id="calc-n" min="5" max="500" step="5" value="40">
+          </div>
+          <fieldset>
+            <legend>Ile ujęć na produkt?</legend>
+            <div class="seg">
+              <label><input type="radio" name="shots" value="1" checked><span>1 ujęcie<small>zdjęcie główne</small></span></label>
+              <label><input type="radio" name="shots" value="5"><span>5 ujęć<small>komplet do oferty</small></span></label>
+            </div>
+          </fieldset>
+          <p class="calc-photos" id="calc-photos" aria-live="polite">Razem <strong>40 zdjęć</strong> miesięcznie.</p>
+        </form>
+        <div class="calc-out">
+          <div class="paths" id="calc-paths" aria-live="polite">
+            <article class="path">
+              <h3>Fotograf</h3>
+              <p class="cost" id="calc-photo-cost">—</p>
+              <p class="time">Czas: kilka dni na termin i obróbkę</p>
+              <p class="how">Przyjęliśmy 25–40 zł za zdjęcie.</p>
+            </article>
+            <article class="path">
+              <h3>Samodzielnie</h3>
+              <p class="cost" id="calc-self-cost">—</p>
+              <p class="time" id="calc-self-time">—</p>
+              <p class="how">15 min na zdjęcie (ustawienie, obróbka, kadr) × 30 zł/h — tyle wart jest Twój czas.</p>
+            </article>
+            <article class="path path-kadr">
+              <h3>Kadr</h3>
+              <p class="cost" id="calc-kadr-cost">—</p>
+              <p class="time" id="calc-kadr-time">—</p>
+              <p class="how" id="calc-kadr-how">—</p>
+              <button class="btn btn-sm" type="button" id="calc-pick">Wybierz plan</button>
+            </article>
+          </div>
+          <p class="save" id="calc-save"><svg aria-hidden="true"><use href="#i-check"/></svg><span></span></p>
+          <p class="calc-disc"><strong>Szacunek — Twoje stawki mogą być inne.</strong> Liczymy 1 zdjęcie = 1 kredyt w Kadrze. Pakiet „Na start” jest ważny 12 miesięcy, więc przy małej liczbie zdjęć jeden pakiet starcza na kilka miesięcy.</p>
         </div>
       </div>
     </div>
@@ -1013,7 +1695,7 @@ section { scroll-margin-top: 76px; }
         <p>Zacznij za darmo. Gdy zobaczysz efekt, wybierz pakiet jednorazowy albo abonament dla sklepu.</p>
       </div>
       <div class="price-grid">
-        <article class="plan reveal">
+        <article class="plan reveal" id="plan-darmowy">
           <h3>Darmowy</h3>
           <p class="plan-desc">Sprawdź efekt na własnym produkcie.</p>
           <div class="price"><span class="amount">0 zł</span></div>
@@ -1021,9 +1703,9 @@ section { scroll-margin-top: 76px; }
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>3 zdjęcia ze znakiem wodnym</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>3 tytuły</li>
           </ul>
-          <a class="btn btn-ghost btn-block" href="#generator">Zacznij za darmo</a>
+          <a class="btn btn-ghost btn-block" href="#studio">Zacznij za darmo</a>
         </article>
-        <article class="plan reveal">
+        <article class="plan reveal" id="plan-start">
           <h3>Na start</h3>
           <p class="plan-desc">Dla okazjonalnych sprzedawców, bez zobowiązań.</p>
           <div class="price"><span class="amount">29 zł</span><span class="per">jednorazowo</span></div>
@@ -1034,7 +1716,7 @@ section { scroll-margin-top: 76px; }
           </ul>
           <a class="btn btn-ghost btn-block" href="#generator">Kup pakiet</a>
         </article>
-        <article class="plan plan-featured reveal">
+        <article class="plan plan-featured reveal" id="plan-sklep">
           <span class="plan-badge">Najpopularniejszy</span>
           <h3>Sklep</h3>
           <p class="plan-desc">Dla sklepów, które regularnie dodają oferty.</p>
@@ -1046,7 +1728,7 @@ section { scroll-margin-top: 76px; }
           </ul>
           <a class="btn btn-block" href="#generator">Wybierz Sklep</a>
         </article>
-        <article class="plan reveal">
+        <article class="plan reveal" id="plan-pro">
           <h3>Pro</h3>
           <p class="plan-desc">Dla dużych katalogów i integracji.</p>
           <div class="price"><span class="amount">249 zł</span><span class="per">/ mies.</span></div>
@@ -1092,6 +1774,50 @@ section { scroll-margin-top: 76px; }
     </div>
   </section>
 
+  <!-- PORADNIK -->
+  <section class="section" id="poradnik" aria-labelledby="guide-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Poradnik</span>
+        <h2 id="guide-title">Sprzedawaj lepiej, nawet bez Kadra</h2>
+        <p>Krótkie, konkretne poradniki dla sprzedawców: zdjęcia telefonem, Vinted i tytuły na Allegro.</p>
+      </div>
+      <div class="guide-grid">
+        <a class="guide reveal" href="blog/jak-robic-zdjecia-na-allegro.html">
+          <span class="guide-art" aria-hidden="true">
+            <svg viewBox="0 0 120 80" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="28" y="6" width="40" height="68" rx="7" stroke-width="2.5" style="fill:var(--surface);stroke:var(--border-strong)"/><rect x="33" y="14" width="30" height="46" rx="3" fill="#fff" style="stroke:var(--border)"/><g transform="translate(37 24) scale(.1)"><use href="#mug"/></g><circle cx="48" cy="67" r="3" style="fill:var(--border-strong)"/><circle cx="90" cy="22" r="10" fill="#fde68a"/><path d="M90 6v4M90 34v4M74 22h4M102 22h4M79 11l3 3M98 30l3 3M101 11l-3 3M82 30l-3 3" stroke="#f59e0b" stroke-width="2.5"/></svg>
+          </span>
+          <div class="guide-body">
+            <h3>Jak robić zdjęcia na Allegro telefonem</h3>
+            <p>Światło z okna, biała kartka i kilka ustawień aparatu, które naprawdę robią różnicę.</p>
+            <span class="more">Czytaj poradnik →</span>
+          </div>
+        </a>
+        <a class="guide reveal" href="blog/jak-szybciej-sprzedac-na-vinted.html">
+          <span class="guide-art" aria-hidden="true">
+            <svg viewBox="0 0 120 80" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M44 12h32l18 12-8 12-8-5v39H42V31l-8 5-8-12z" stroke-width="2.5" style="fill:var(--accent-soft);stroke:var(--accent)"/><path d="M52 12c0 5 4 8 8 8s8-3 8-8" stroke-width="2.5" style="stroke:var(--accent)"/><g transform="rotate(-12 92 58)"><rect x="78" y="48" width="30" height="18" rx="3" stroke-width="2" style="fill:var(--surface);stroke:var(--border-strong)"/><circle cx="84" cy="57" r="2.5" style="fill:var(--border-strong)"/><path d="M90 57h12" stroke-width="3" style="stroke:var(--ok)"/></g></svg>
+          </span>
+          <div class="guide-body">
+            <h3>Jak szybciej sprzedać na Vinted</h3>
+            <p>Zdjęcia, tytuł, opis i cena: co sprawia, że kupujący klika właśnie w Twoje ogłoszenie.</p>
+            <span class="more">Czytaj poradnik →</span>
+          </div>
+        </a>
+        <a class="guide reveal" href="blog/tytul-oferty-allegro-75-znakow.html">
+          <span class="guide-art" aria-hidden="true">
+            <svg viewBox="0 0 120 80" fill="none" stroke-linecap="round"><rect x="12" y="18" width="96" height="44" rx="8" stroke-width="2.5" style="fill:var(--surface);stroke:var(--border-strong)"/><path d="M24 34h52M24 46h34" stroke-width="4" opacity=".75" style="stroke:var(--text)"/><rect x="74" y="40" width="26" height="13" rx="6.5" style="fill:var(--ok-soft)"/><text x="87" y="49.5" font-size="8" font-weight="800" text-anchor="middle" font-family="system-ui, sans-serif" style="fill:var(--ok)">75</text><path d="M80 34h8" stroke-width="4" style="stroke:var(--accent)"/></svg>
+          </span>
+          <div class="guide-body">
+            <h3>Tytuł oferty na Allegro: 75 znaków, które sprzedają</h3>
+            <p>Jak ułożyć słowa, czego nie wpisywać i dlaczego parametry są ważniejsze, niż się wydaje.</p>
+            <span class="more">Czytaj poradnik →</span>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:28px;text-align:center"><a class="btn btn-ghost" href="blog/index.html">Wszystkie artykuły poradnika</a></p>
+    </div>
+</section>
+
   <!-- FAQ -->
   <section class="section features" id="faq" aria-labelledby="faq-title">
     <div class="container">
@@ -1128,7 +1854,21 @@ section { scroll-margin-top: 76px; }
         <details>
           <summary>Co z moimi zdjęciami i RODO?</summary>
           <div class="faq-answer">
-            <p>Zdjęcia przechowujemy na serwerach w Unii Europejskiej i automatycznie usuwamy je po 30 dniach. To ważne szczególnie dla rękodzielników, którzy chronią swoje wzory.</p>
+            <p>Zdjęcia przechowujemy na serwerach w Unii Europejskiej i automatycznie usuwamy je po 30 dniach. Nie trenujemy modeli na Twoich zdjęciach. To ważne szczególnie dla rękodzielników, którzy chronią swoje wzory.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Czy moje zdjęcie jest gdzieś wysyłane?</summary>
+          <div class="faq-answer">
+            <p>Nie. Studio demo na tej stronie działa w całości w Twojej przeglądarce: audyt, kadrowanie, aranżacje i wycinanie tła liczą się na Twoim urządzeniu, a zdjęcie nie trafia na nasz serwer.</p>
+            <p>Z internetu pobierany jest tylko sam model AI — przy pierwszym wycinaniu, z publicznych serwerów CDN dostawcy biblioteki (jsDelivr i IMG.LY). Twoje zdjęcie nie jest tam wysyłane.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Dlaczego wycinanie AI w demo jest wolne?</summary>
+          <div class="faq-answer">
+            <p>Bo model AI pracuje na procesorze Twojego telefonu lub komputera, a przy pierwszym uruchomieniu przeglądarka musi go pobrać (ok. 40–80 MB). Kolejne wycinania są szybsze, bo model zostaje w pamięci przeglądarki.</p>
+            <p>W pełnej wersji Kadra wycinanie robi serwer, więc nie obciąża Twojego urządzenia i nie wymaga pobierania modelu.</p>
           </div>
         </details>
         <details>
@@ -1152,7 +1892,7 @@ section { scroll-margin-top: 76px; }
         <details>
           <summary>Co dostaję w darmowym planie?</summary>
           <div class="faq-answer">
-            <p>3 zdjęcia ze znakiem wodnym i 3 tytuły — wystarczy, żeby sprawdzić efekt na własnym produkcie. Generator tytułów na tej stronie możesz używać bez limitu i bez logowania.</p>
+            <p>3 zdjęcia ze znakiem wodnym i 3 tytuły — wystarczy, żeby sprawdzić efekt na własnym produkcie. Studio demo, generator tytułów, sprawdzanie tytułu i opis na tej stronie możesz używać bez limitu i bez logowania.</p>
           </div>
         </details>
       </div>
@@ -1166,7 +1906,7 @@ section { scroll-margin-top: 76px; }
         <h2 id="final-title">Twoje następne zdjęcie może być gotową ofertą</h2>
         <p>Zrób zdjęcie telefonem, a resztę zostaw Kadrowi. Pierwsze 3 zdjęcia są za darmo.</p>
         <div class="final-actions">
-          <a class="btn btn-invert" href="#generator">Wypróbuj za darmo</a>
+          <a class="btn btn-invert" href="#studio">Wypróbuj za darmo</a>
           <a class="btn btn-outline-inv" href="#cennik">Zobacz cennik</a>
         </div>
       </div>
@@ -1184,12 +1924,20 @@ section { scroll-margin-top: 76px; }
     </a>
     <p>© 2026 Kadr. Zdjęcia i opisy produktów dla sprzedawców.</p>
     <ul class="footer-links">
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#poradnik">Poradnik</a></li>
+      <li><a href="blog/jak-robic-zdjecia-na-allegro.html">Zdjęcia na Allegro</a></li>
       <li><a href="#">Regulamin</a></li>
       <li><a href="#">Polityka prywatności</a></li>
       <li><a href="#">Kontakt</a></li>
     </ul>
   </div>
 </footer>
+
+<div class="mcta" id="mcta">
+  <p><strong>3 zdjęcia za darmo</strong>Bez logowania, po polsku</p>
+  <a class="btn btn-sm" href="#studio">Wypróbuj za darmo</a>
+</div>
 
 <script>
 (function () {
@@ -1309,6 +2057,10 @@ section { scroll-margin-top: 76px; }
     });
   }
 
+  function copyButton(id, label) {
+    return '<button type="button" class="copy-btn" data-copy="' + id + '"><svg aria-hidden="true"><use href="#i-copy"/></svg><span>' + (label || "Kopiuj") + '</span></button>';
+  }
+
   function render(d) {
     if (!d.name && !d.brand && !d.model && !d.feat1) {
       out.innerHTML = '<p class="gen-msg">Wpisz przynajmniej nazwę produktu — na przykład „Kubek ceramiczny” — i kliknij „Wygeneruj”.</p>';
@@ -1333,7 +2085,7 @@ section { scroll-margin-top: 76px; }
         (t.cut
           ? '<span class="cut-note">Skrócono do pełnego słowa — teraz ' + n + '/' + MAX + '</span>'
           : '<span class="ok-note">Mieści się w limicie Allegro</span>') +
-        '<button type="button" class="copy-btn" data-copy="' + i + '"><svg aria-hidden="true"><use href="#i-copy"/></svg><span>Kopiuj</span></button>' +
+        copyButton("title-" + i) +
         '</div></li>';
     });
     html += '</ol>';
@@ -1361,18 +2113,233 @@ section { scroll-margin-top: 76px; }
     leadBox.hidden = false;
   }
 
+  /* ---------- Opis oferty (zakładka 3) ---------- */
+  var descOut = document.getElementById("desc-result");
+  var PH_RE = /\[[^\]]+\]/g;
+  function describe(d) {
+    var fullName = build([d.name, d.brand, d.model]);
+    var extras = [d.color ? lowerFirstSoft(d.color) : "", d.size].filter(Boolean);
+    var header = fullName + (extras.length ? " – " + extras.join(", ") : "");
+    var bullets = [];
+    if (d.brand) bullets.push("Marka: " + d.brand);
+    if (d.model) bullets.push("Model: " + d.model);
+    if (d.color) bullets.push("Kolor: " + d.color);
+    if (d.size) bullets.push("Rozmiar / pojemność: " + d.size);
+    if (d.feat1) bullets.push(upperFirst(d.feat1));
+    if (d.feat2) bullets.push(upperFirst(d.feat2));
+    var fillers = ["[Materiał — np. ceramika, bawełna, stal]", "[Wymiary — np. wysokość 10 cm]", "[Do czego służy — jedno krótkie zdanie]", "[Najważniejsza cecha, której nie widać na zdjęciu]"];
+    var fi = 0;
+    while (bullets.length < 4 && fi < fillers.length) bullets.push(fillers[fi++]);
+    bullets = bullets.slice(0, 6);
+    var used = d.cond === "Używany";
+    var stan = used
+      ? "Produkt jest używany. Zdjęcia pokazują jego aktualny stan. [Opisz krótko ślady użytkowania, np. drobne rysy na spodzie, albo napisz, że ich nie ma.]"
+      : "Produkt jest nowy, nieużywany.";
+    var zestaw = fullName + ". [Dopisz pozostałe elementy, np. opakowanie lub instrukcję, albo usuń ten nawias.]";
+    var wysylka = "Dostępne formy dostawy i ich koszt znajdziesz w szczegółach oferty. Informacje o zwrotach i reklamacjach są w warunkach oferty. Masz pytanie o produkt? Napisz wiadomość przed zakupem.";
+    return { header: header, bullets: bullets, sections: [["Stan", stan], ["W zestawie", zestaw], ["Wysyłka i zwroty", wysylka]] };
+  }
+  function descToText(o) {
+    var t = o.header + "\n\n" + o.bullets.map(function (b) { return "• " + b; }).join("\n");
+    o.sections.forEach(function (s) { t += "\n\n" + s[0] + "\n" + s[1]; });
+    return t;
+  }
+  function phHtml(s) {
+    return esc(s).replace(PH_RE, function (m) { return '<span class="ph">' + m + '</span>'; });
+  }
+  var lastDescText = "";
+  function renderDesc(d) {
+    if (!d.name) {
+      descOut.innerHTML = '<p class="gen-msg">Wpisz przynajmniej nazwę produktu — na przykład „Kubek ceramiczny” — i kliknij „Napisz opis”.</p>';
+      lastDescText = "";
+      return;
+    }
+    var o = describe(d);
+    lastDescText = descToText(o);
+    var html = '<div class="desc-preview" id="desc-text"><h4>' + esc(o.header) + '</h4><ul>' +
+      o.bullets.map(function (b) { return '<li>' + phHtml(b) + '</li>'; }).join("") + '</ul>';
+    o.sections.forEach(function (s) { html += '<h5>' + esc(s[0]) + '</h5><p>' + phHtml(s[1]) + '</p>'; });
+    html += '</div><div class="desc-tools"><span class="params-hint" style="margin:0">' +
+      (/\[[^\]]+\]/.test(lastDescText) ? 'Fragmenty w [nawiasach] uzupełnij lub usuń przed publikacją.' : 'Przeczytaj opis i dopisz szczegóły, które znasz tylko Ty.') +
+      '</span>' + copyButton("desc", "Kopiuj opis") + '</div>';
+    descOut.innerHTML = html;
+  }
+
+  /* ---------- Zakładki generatora ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#generator [role="tab"]'));
+  var activeTab = "title";
+  var genBtn = document.getElementById("gen-btn");
+  function selectTab(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+    });
+    activeTab = tab.id.replace("tab-", "");
+    if (activeTab === "title" || activeTab === "desc") {
+      document.getElementById("slot-" + activeTab).appendChild(form);
+      genBtn.textContent = activeTab === "desc" ? "Napisz opis" : "Wygeneruj";
+      if (activeTab === "desc" && clean(form.elements.name.value)) renderDesc(readFields());
+    }
+    var panel = document.getElementById(tab.getAttribute("aria-controls"));
+    panel.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { selectTab(t); });
+    t.addEventListener("keydown", function (e) {
+      var k = e.key, n = null;
+      if (k === "ArrowRight") n = tabs[(i + 1) % tabs.length];
+      else if (k === "ArrowLeft") n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (k === "Home") n = tabs[0];
+      else if (k === "End") n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); selectTab(n, true); }
+    });
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    try { render(readFields()); }
-    catch (err) {
-      out.innerHTML = '<p class="gen-msg">Coś poszło nie tak. Sprawdź pola i spróbuj ponownie.</p>';
+    try {
+      if (activeTab === "desc") renderDesc(readFields());
+      else render(readFields());
+    } catch (err) {
+      (activeTab === "desc" ? descOut : out).innerHTML = '<p class="gen-msg">Coś poszło nie tak. Sprawdź pola i spróbuj ponownie.</p>';
     }
   });
 
   document.getElementById("gen-example").addEventListener("click", function () {
     var ex = { name: "Kubek ceramiczny", brand: "Glinka", model: "Baryłka", color: "turkusowy", size: "350 ml", cond: "Nowy", feat1: "ręcznie malowany", feat2: "matowy" };
     Object.keys(ex).forEach(function (k) { if (form.elements[k]) form.elements[k].value = ex[k]; });
-    render(readFields());
+    if (activeTab === "desc") renderDesc(readFields());
+    else render(readFields());
+  });
+
+  /* ---------- Sprawdzanie tytułu (zakładka 2) ---------- */
+  var checkForm = document.getElementById("check-form");
+  var checkInput = document.getElementById("check-input");
+  var checkCount = document.getElementById("check-count");
+  var checkOut = document.getElementById("check-result");
+  var FILLERS = ["okazja", "okazje", "okazji", "okazyjnie", "okazyjna", "okazyjny", "promocja", "promocji", "promocyjna", "promocyjny", "promo", "super", "hit", "hity", "tanio", "taniej", "najtaniej", "tani", "tania", "tanie", "polecam", "mega", "wow", "wyprzedaż", "wyprzedaz", "gratis", "rewelacja", "rewelacyjny", "rewelacyjna", "ekstra", "extra", "bomba", "sale", "okazjaa", "najlepszy", "najlepsza", "najlepsze", "zobacz", "sprawdź", "sprawdz", "hot", "top"];
+  var ACRONYMS = ["USB", "LED", "LCD", "OLED", "HDMI", "AGD", "RTV", "GPS", "PVC", "SSD", "HDD", "RAM", "XXL", "XXXL", "XS", "XL", "ABS", "BHP", "DIY", "MDF", "PET", "LTE", "NFC", "SIM", "UV", "PLN", "EU", "UE", "RGB", "WIFI", "AUX", "DVD", "MP3", "MP4", "ISO", "PCV", "PE", "PP", "ATX", "IPS", "VAT"];
+  var COLORS = /(czarn|biał|bial|czerwon|niebiesk|zielon|żółt|zolt|szar|różow|rozow|róż|fiolet|brąz|braz|beż|bez[oó]w|granat|turkus|srebrn|złot|zlot|pomarańcz|pomarancz|błękit|blekit|bordo|bordow|kremow|grafit|transparent|przezroczyst|wielokolor|kolorow|miętow|mietow|oliwk|khaki|ecru|limonk|koralow|lila|liliow|écru|mlecz|antracyt|miedzian|stalow|natural|drewnian|black|white|red|blue|green|grey|gray|pink)/i;
+  var EMOJI = /\p{Extended_Pictographic}/u;
+  var PHONE = /(\+?48[\s-]?)?(\d{3}[\s-]?\d{3}[\s-]?\d{3})(?!\d)/;
+  var URL_RE = /(https?:\/\/|www\.)\S+|\b[\w-]+\.(pl|com|eu|net|org|shop|store)\b/i;
+  var MAIL = /[^\s@]+@[^\s@]+\.[a-z]{2,}/i;
+  var CONTACT_WORD = /(^|\s)(tel\.?|telefon|kontakt|whatsapp|dzwoń|dzwon|sms)(?=\s|$|[:.,])/i;
+
+  function wordsOf(t) { return t.split(/[\s,;:/|+()\[\]"„”]+/).filter(Boolean); }
+  function norm(w) { return w.toLocaleLowerCase("pl-PL").replace(/^[^0-9a-ząćęłńóśźż]+|[^0-9a-ząćęłńóśźż]+$/gi, ""); }
+  function isAcr(w) { return ACRONYMS.indexOf(w.replace(/[^A-Z0-9ĄĆĘŁŃÓŚŹŻ]/g, "")) !== -1; }
+
+  function checkTitle(raw) {
+    var t = clean(raw);
+    var issues = [];
+    var n = len(t);
+    var words = wordsOf(t);
+    var normed = words.map(norm).filter(Boolean);
+    function add(sev, pts, title, tip) { issues.push({ sev: sev, pts: pts, title: title, tip: tip }); }
+
+    if (n > MAX) add("bad", 25, "Za długi: " + n + " znaków", "Allegro przyjmie maksymalnie 75 znaków. Usuń słowa, które powtarzają parametry, np. stan.");
+    else if (n < 25) add("warn", 10, "Bardzo krótki tytuł (" + n + " znaków)", "Masz jeszcze miejsce — dodaj markę, model, kolor albo rozmiar, jeśli pasują do produktu.");
+
+    var caps = words.filter(function (w) {
+      var letters = w.replace(/[^A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]/g, "");
+      return letters.length >= 3 && letters === letters.toLocaleUpperCase("pl-PL") && letters !== letters.toLocaleLowerCase("pl-PL") && !/\d/.test(w) && !isAcr(w);
+    });
+    if (caps.length) add("bad", 15, "Słowa WIELKIMI LITERAMI: " + caps.slice(0, 4).map(norm).map(function (w) { return w.toLocaleUpperCase("pl-PL"); }).join(", "), "Pisz normalnie — wielkie litery wyglądają jak krzyk i nie poprawiają pozycji. Zostaw je tylko w nazwie marki, która tak się pisze (np. LEGO).");
+
+    if (/[!¡]/.test(t)) add("bad", 10, "Wykrzykniki", "Wykrzykniki zabierają znaki i nie pomagają w wyszukiwarce. Usuń je.");
+
+    if (EMOJI.test(t)) add("bad", 10, "Emoji lub symbole ozdobne", "Emoji w tytule nie są wyszukiwane i mogą się źle wyświetlać. Zamień je na słowo, które opisuje produkt.");
+    else if (/[*#~^=<>|_]{1,}|\.{3,}/.test(t)) add("warn", 5, "Znaki ozdobne", "Gwiazdki, krzyżyki i kreski nie niosą informacji. Usuń je i wykorzystaj miejsce na cechę.");
+
+    var seen = Object.create(null), reps = [];
+    normed.forEach(function (w) {
+      if (w.length < 3 || /^\d+$/.test(w)) return;
+      if (seen[w] === 1) reps.push(w);
+      seen[w] = (seen[w] || 0) + 1;
+    });
+    if (reps.length) add("warn", 10, "Powtórzone słowa: " + reps.slice(0, 3).join(", "), "Wyszukiwarka znajdzie słowo, nawet jeśli wystąpi raz. Wykorzystaj miejsce na kolor, rozmiar albo cechę.");
+
+    var fill = [];
+    normed.forEach(function (w) { if (FILLERS.indexOf(w) !== -1 && fill.indexOf(w) === -1) fill.push(w); });
+    if (fill.length) add("bad", 15, "Słowa-wypełniacze: " + fill.join(", "), "Kupujący nie wpisują „okazja” ani „super” w wyszukiwarkę. Zastąp te słowa konkretną cechą produktu.");
+
+    var contact = PHONE.test(t) || URL_RE.test(t) || MAIL.test(t) || CONTACT_WORD.test(t);
+    if (contact) add("bad", 25, "Dane kontaktowe lub adres strony", "Regulamin Allegro nie pozwala podawać w ofercie telefonu, e-maila ani linków do innych stron. Usuń je z tytułu.");
+
+    if (/(^|\s)(nowy|nowa|nowe|nówka|nowka|używany|używana|używane)(?=\s|$)/i.test(t)) add("warn", 5, "Stan w tytule", "Stan podajesz w parametrach oferty, więc nie musi zajmować miejsca w tytule.");
+
+    if (!COLORS.test(t)) add("warn", 5, "Nie widać koloru", "Jeśli produkt ma kolor, dodaj go — kupujący często go wpisują i filtrują po nim.");
+    var hasBrand = words.slice(1).some(function (w) { return /^[A-ZĄĆĘŁŃÓŚŹŻ]/.test(w) && !isAcr(w) && caps.indexOf(w) === -1; }) || words.some(function (w) { return /[A-Za-z]\d|\d[A-Za-z]/.test(w) && !/^\d+(ml|l|g|kg|cm|mm|m|w|v|szt|gb|tb|mah)$/i.test(w); });
+    if (!hasBrand) add("warn", 5, "Nie widać marki ani modelu", "Jeśli produkt ma markę lub model, dodaj je — to jedne z najczęściej wpisywanych słów. Przy rękodziele możesz pominąć tę uwagę.");
+
+    var score = 100;
+    issues.forEach(function (i) { score -= i.pts; });
+    score = Math.max(0, Math.min(100, score));
+    return { text: t, n: n, score: score, issues: issues, fixed: fixTitle(t) };
+  }
+
+  function fixTitle(t) {
+    var s = " " + t + " ";
+    s = s.replace(/(https?:\/\/|www\.)\S+/gi, " ").replace(/[^\s@]+@[^\s@]+\.[a-z]{2,}/gi, " ");
+    s = s.replace(/\b[\w-]+\.(pl|com|eu|net|org|shop|store)\b/gi, " ");
+    s = s.replace(/(\+?48[\s-]?)?\d{3}[\s-]?\d{3}[\s-]?\d{3}(?!\d)/g, " ");
+    s = s.replace(/(^|\s)(tel\.?|telefon|kontakt|whatsapp|dzwoń|dzwon|sms)[:.]?(?=\s)/gi, " ");
+    s = s.replace(/\p{Extended_Pictographic}|️|‍/gu, " ").replace(/[!¡*#~^=<>|_]+|\.{3,}/g, " ");
+    var words = s.split(/\s+/).filter(Boolean).filter(function (w) { return FILLERS.indexOf(norm(w)) === -1; });
+    words = words.map(function (w) {
+      var letters = w.replace(/[^A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]/g, "");
+      if (letters.length >= 3 && letters === letters.toLocaleUpperCase("pl-PL") && !/\d/.test(w) && !isAcr(w)) return w.toLocaleLowerCase("pl-PL");
+      return w;
+    });
+    var res = fit(build([words.join(" ")])).text;
+    return res.replace(/^[\s,;:.\-–—]+/, "");
+  }
+
+  function sevIcon(sev) { return sev === "ok" ? "#i-yes" : sev === "warn" ? "#i-warn" : "#i-no"; }
+  function sevLabel(sev) { return sev === "ok" ? "OK" : sev === "warn" ? "Uwaga" : "Problem"; }
+
+  function renderCheck() {
+    var raw = checkInput.value;
+    if (!clean(raw)) {
+      checkOut.innerHTML = '<p class="gen-msg">Wklej tytuł oferty, który chcesz sprawdzić.</p>';
+      return;
+    }
+    var r = checkTitle(raw);
+    var cls = r.score >= 80 ? "" : r.score >= 50 ? " mid" : " low";
+    var verdict = r.score >= 80 ? "Dobry tytuł" : r.score >= 50 ? "Do poprawy" : "Słaby tytuł";
+    var html = '<div class="score"><div class="score-ring' + cls + '" style="--v:' + r.score + '" role="img" aria-label="Wynik ' + r.score + ' na 100 punktów"><span aria-hidden="true">' + r.score + '</span></div>' +
+      '<div><h4>' + verdict + '</h4><p>' + r.n + '/' + MAX + ' znaków · ' + (r.issues.length ? 'znaleźliśmy ' + r.issues.length + ' ' + plural(r.issues.length, "uwagę", "uwagi", "uwag") : 'bez uwag') + '</p></div></div>';
+    if (r.issues.length) {
+      html += '<ul class="audit" id="check-issues">';
+      r.issues.forEach(function (i) {
+        html += '<li class="a-' + i.sev + '"><span class="a-dot"><svg aria-hidden="true"><use href="' + sevIcon(i.sev) + '"/></svg></span><div>' +
+          '<div class="a-head"><strong>' + esc(i.title) + '</strong><span class="a-lvl">' + sevLabel(i.sev) + '</span></div><p>' + esc(i.tip) + '</p></div></li>';
+      });
+      html += '</ul>';
+    } else {
+      html += '<p class="s-msg ok">Ten tytuł jest zwięzły i czysty. Upewnij się jeszcze, że parametry oferty (marka, model, kolor, rozmiar, stan) są uzupełnione.</p>';
+    }
+    if (r.issues.length && r.fixed && r.fixed !== r.text) {
+      html += '<div class="fix-box"><div class="title-card"><div class="title-top"><span class="title-kind">Propozycja po poprawkach</span><span class="counter ok">' + len(r.fixed) + '/' + MAX + '</span></div>' +
+        '<p class="title-text" id="check-fixed">' + esc(r.fixed) + '</p><div class="title-bottom"><span class="ok-note">Usunęliśmy to, co da się poprawić automatycznie. Markę i kolor dopisz sam.</span>' + copyButton("check-fixed") + '</div></div></div>';
+    }
+    checkOut.innerHTML = html;
+  }
+  function updateCount() {
+    var n = len(clean(checkInput.value));
+    checkCount.textContent = n + "/" + MAX;
+    checkCount.classList.toggle("over", n > MAX);
+  }
+  checkInput.addEventListener("input", updateCount);
+  checkForm.addEventListener("submit", function (e) { e.preventDefault(); renderCheck(); });
+  document.getElementById("check-example").addEventListener("click", function () {
+    checkInput.value = "SUPER OKAZJA!!! kubek kubek tel. 500600700";
+    updateCount();
+    renderCheck();
   });
 
   /* ---------- Kopiowanie ---------- */
@@ -1394,16 +2361,785 @@ section { scroll-margin-top: 76px; }
     }
     return Promise.resolve(fallbackCopy(text));
   }
-  out.addEventListener("click", function (e) {
+  document.getElementById("generator").addEventListener("click", function (e) {
     var btn = e.target.closest ? e.target.closest(".copy-btn") : null;
     if (!btn) return;
-    var p = document.getElementById("title-" + btn.getAttribute("data-copy"));
-    if (!p) return;
+    var id = btn.getAttribute("data-copy");
+    var text = id === "desc" ? lastDescText : (document.getElementById(id) || {}).textContent;
+    if (!text) return;
     var label = btn.querySelector("span");
-    copyText(p.textContent).then(function (ok) {
+    var orig = label.getAttribute("data-label") || label.textContent;
+    label.setAttribute("data-label", orig);
+    copyText(text).then(function (ok) {
       btn.classList.toggle("done", !!ok);
       label.textContent = ok ? "Skopiowano" : "Zaznacz i skopiuj";
-      setTimeout(function () { btn.classList.remove("done"); label.textContent = "Kopiuj"; }, 2000);
+      setTimeout(function () { btn.classList.remove("done"); label.textContent = orig; }, 2000);
+    });
+  });
+
+  /* ---------- Wspólne drobiazgi ---------- */
+  function plural(n, one, few, many) {
+    var a = Math.abs(n) % 100, b = a % 10;
+    if (n === 1) return one;
+    if (b >= 2 && b <= 4 && !(a >= 12 && a <= 14)) return few;
+    return many;
+  }
+  var nf0 = new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 0 });
+  var nf1 = new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 1 });
+  function zl(v) { return nf0.format(Math.round(v)) + " zł"; }
+  function zlRange(a, b) { return nf0.format(Math.round(a)) + "–" + zl(b); }
+  function mb(bytes) { return nf1.format(bytes / 1048576) + " MB"; }
+  function hm(min) {
+    min = Math.round(min);
+    var h = Math.floor(min / 60), m = min % 60;
+    if (!h) return m + " min";
+    return nf0.format(h) + " h" + (m ? " " + m + " min" : "");
+  }
+
+  /* ---------- Suwak porównania przed / po ---------- */
+  function initCompare(root) {
+    var handle = root.querySelector(".cmp-handle");
+    var pos = 50, drag = false, pending = false, sx = 0, sy = 0, pid = null;
+    function set(p) {
+      pos = Math.max(0, Math.min(100, p));
+      var r = Math.round(pos);
+      root.style.setProperty("--pos", pos + "%");
+      handle.setAttribute("aria-valuenow", String(r));
+      handle.setAttribute("aria-valuetext", r + " procent: po lewej zdjęcie przed, po prawej po");
+    }
+    function fromX(x) { var b = root.getBoundingClientRect(); if (b.width) set((x - b.left) / b.width * 100); }
+    root.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      pid = e.pointerId; sx = e.clientX; sy = e.clientY;
+      if (e.pointerType === "mouse" || e.target === handle || handle.contains(e.target)) {
+        drag = true; pending = false;
+        try { root.setPointerCapture(pid); } catch (err) { /* brak */ }
+        fromX(e.clientX);
+        if (e.pointerType === "mouse") e.preventDefault();
+      } else {
+        pending = true; // dotyk: czekamy, czy to przesunięcie w poziomie, czy przewijanie strony
+      }
+    });
+    root.addEventListener("pointermove", function (e) {
+      if (e.pointerId !== pid) return;
+      if (pending) {
+        var dx = Math.abs(e.clientX - sx), dy = Math.abs(e.clientY - sy);
+        if (dx > 6 && dx > dy) {
+          pending = false; drag = true;
+          try { root.setPointerCapture(pid); } catch (err) { /* brak */ }
+        } else if (dy > 10) { pending = false; }
+      }
+      if (drag) fromX(e.clientX);
+    });
+    function end(e) {
+      if (e.pointerId !== pid) return;
+      if (pending && e.type === "pointerup") fromX(e.clientX); // zwykłe stuknięcie
+      drag = false; pending = false; pid = null;
+    }
+    root.addEventListener("pointerup", end);
+    root.addEventListener("pointercancel", end);
+    handle.addEventListener("keydown", function (e) {
+      var step = { ArrowLeft: -5, ArrowDown: -5, ArrowRight: 5, ArrowUp: 5, PageDown: -10, PageUp: 10 }[e.key];
+      if (step) { e.preventDefault(); set(pos + step); }
+      else if (e.key === "Home") { e.preventDefault(); set(0); }
+      else if (e.key === "End") { e.preventDefault(); set(100); }
+    });
+    set(50);
+  }
+  document.querySelectorAll("[data-compare]").forEach(initCompare);
+
+  /* ---------- Studio: grafika ---------- */
+  var S_EXPORT = 2560, S_PREVIEW = 1024, MAX_BYTES = 20 * 1024 * 1024;
+  function mkCanvas(w, h) { var c = document.createElement("canvas"); c.width = Math.max(1, Math.round(w)); c.height = Math.max(1, Math.round(h)); return c; }
+  function rctx(c) { return c.getContext("2d", { willReadFrequently: true }); }
+  function rng(seed) {
+    return function () {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  function blob(x, cx, cy, rx, ry, color, a) {
+    x.save(); x.translate(cx, cy); x.scale(1, ry / rx);
+    var g = x.createRadialGradient(0, 0, 0, 0, 0, rx);
+    g.addColorStop(0, color.replace("A", a)); g.addColorStop(1, color.replace("A", 0));
+    x.fillStyle = g; x.beginPath(); x.arc(0, 0, rx, 0, Math.PI * 2); x.fill(); x.restore();
+  }
+
+  // Kubek z symbolu SVG #mug, narysowany ścieżkami canvas (bez rastrów, bez „brudzenia” canvasu).
+  var MUG_P = null;
+  function drawMug(x, tx, ty, s) {
+    if (!MUG_P) MUG_P = {
+      handle: new Path2D("M150 64 C 196 60, 204 92, 196 112 C 188 134, 166 142, 148 140"),
+      body: new Path2D("M40 46 L160 46 L154 166 Q152 186 132 186 L68 186 Q48 186 46 166 Z"),
+      refl: new Path2D("M60 62 L64 168"),
+      leaf: new Path2D("M102 99 C 112 106, 112 122, 102 129 C 92 122, 92 106, 102 99 Z"),
+      stem: new Path2D("M102 104 L102 126"),
+      chip: new Path2D("M138 50 l6 1 l-2 5 z")
+    };
+    x.save(); x.translate(tx, ty); x.scale(s, s); x.lineCap = "round";
+    x.strokeStyle = "#0f5f55"; x.lineWidth = 16; x.stroke(MUG_P.handle);
+    x.globalAlpha = .55; x.strokeStyle = "#1c8a7b"; x.lineWidth = 7; x.stroke(MUG_P.handle); x.globalAlpha = 1;
+    var g = x.createLinearGradient(40, 0, 160, 0);
+    g.addColorStop(0, "#0f5f55"); g.addColorStop(.35, "#1c8a7b"); g.addColorStop(.7, "#17786b"); g.addColorStop(1, "#0c5049");
+    x.fillStyle = g; x.fill(MUG_P.body);
+    x.fillStyle = "#1f9483"; x.beginPath(); x.ellipse(100, 46, 60, 12, 0, 0, Math.PI * 2); x.fill();
+    var gi = x.createLinearGradient(0, 38.5, 0, 55.5); gi.addColorStop(0, "#0a3d37"); gi.addColorStop(1, "#14695e");
+    x.fillStyle = gi; x.beginPath(); x.ellipse(100, 47, 52, 8.5, 0, 0, Math.PI * 2); x.fill();
+    x.strokeStyle = "rgba(255,255,255,.22)"; x.lineWidth = 7; x.stroke(MUG_P.refl);
+    x.fillStyle = "#f6efe2"; x.beginPath(); x.arc(102, 114, 22, 0, Math.PI * 2); x.fill();
+    x.fillStyle = "#e0782f"; x.fill(MUG_P.leaf);
+    x.strokeStyle = "#f6efe2"; x.lineWidth = 2; x.stroke(MUG_P.stem);
+    x.fillStyle = "#d9e9e4"; x.fill(MUG_P.chip);
+    x.restore();
+  }
+  var MUG_BOX = { x: 40, y: 34, w: 168, h: 152 };
+
+  // Przykładowe „zdjęcie z telefonu”: kubek na szarym, nierównym tle (1600×1200).
+  function makeSample() {
+    var W = 1600, H = 1200, photo = mkCanvas(W, H), cut = mkCanvas(W, H);
+    var x = photo.getContext("2d");
+    var g = x.createLinearGradient(0, 0, 160, H);
+    g.addColorStop(0, "#a29e96"); g.addColorStop(.52, "#8a867f"); g.addColorStop(.53, "#6b675f"); g.addColorStop(.72, "#7b766d"); g.addColorStop(1, "#5f5a52");
+    x.fillStyle = g; x.fillRect(0, 0, W, H);
+    blob(x, 260, 330, 380, 260, "rgba(143,140,134,A)", .9);
+    blob(x, 1380, 760, 330, 260, "rgba(111,108,102,A)", .9);
+    blob(x, 1260, 210, 420, 200, "rgba(255,246,214,A)", .45);
+    blob(x, 210, 320, 170, 210, "rgba(80,78,75,A)", .8);
+    blob(x, 1400, 520, 170, 60, "rgba(184,177,163,A)", .8);
+    var r = rng(7);
+    for (var i = 0; i < 14000; i++) {
+      var v = Math.round(r() * 255);
+      x.fillStyle = "rgba(" + v + "," + v + "," + v + ",.07)";
+      x.fillRect(r() * W, r() * H, 2, 2);
+    }
+    var s = 3.4, tx = 800 - 124 * s, ty = 1010 - 186 * s;
+    blob(x, tx + 112 * s, 1010, 96 * s, 13 * s, "rgba(30,28,24,A)", .55);
+    drawMug(x, tx, ty, s);
+    drawMug(cut.getContext("2d"), tx, ty, s);
+    return { photo: photo, cut: cut, bbox: { x: tx + MUG_BOX.x * s, y: ty + MUG_BOX.y * s, w: MUG_BOX.w * s, h: MUG_BOX.h * s } };
+  }
+
+  /* Sceny (tła rysowane wektorowo, deterministycznie — podgląd = eksport) */
+  var SCENES = {
+    white: { name: "Białe tło", file: "kadr-allegro-2560.jpg", ground: 0 },
+    blat: { name: "Blat kuchenny", file: "kadr-aranzacja-blat-2560.jpg", ground: .82 },
+    lazienka: { name: "Łazienka", file: "kadr-aranzacja-lazienka-2560.jpg", ground: .85 },
+    natura: { name: "Natura", file: "kadr-aranzacja-natura-2560.jpg", ground: .86 }
+  };
+  function light(x, S) { blob(x, S * .18, S * .08, S * .7, S * .5, "rgba(255,255,255,A)", .5); }
+  function drawScene(x, S, id) {
+    var r = rng(id === "blat" ? 11 : id === "lazienka" ? 23 : 37), g, i;
+    if (id === "white") { x.fillStyle = "#ffffff"; x.fillRect(0, 0, S, S); return; }
+    if (id === "blat") {
+      var top = S * .66;
+      g = x.createLinearGradient(0, 0, 0, top); g.addColorStop(0, "#f3ede4"); g.addColorStop(1, "#e3d9cb");
+      x.fillStyle = g; x.fillRect(0, 0, S, top);
+      // kafelki „cegiełki” nad blatem
+      x.strokeStyle = "rgba(160,140,115,.16)"; x.lineWidth = S * .003;
+      var th = S * .055, tw = S * .16;
+      for (var row = 0; row * th < S * .3; row++) {
+        var y = top - (row + 1) * th;
+        x.beginPath(); x.moveTo(0, y); x.lineTo(S, y); x.stroke();
+        for (var cx = (row % 2) * tw / 2; cx < S; cx += tw) { x.beginPath(); x.moveTo(cx, y); x.lineTo(cx, y + th); x.stroke(); }
+      }
+      light(x, S);
+      g = x.createLinearGradient(0, top, 0, S); g.addColorStop(0, "#c99d70"); g.addColorStop(1, "#9c6b41");
+      x.fillStyle = g; x.fillRect(0, top, S, S - top);
+      for (i = 0; i < 70; i++) {
+        var yy = top + r() * (S - top), amp = S * (.002 + r() * .006), ph = r() * 6;
+        x.strokeStyle = "rgba(" + (r() < .5 ? "90,55,25" : "235,200,160") + "," + (.08 + r() * .14) + ")";
+        x.lineWidth = S * (.0015 + r() * .004);
+        x.beginPath();
+        for (var px = 0; px <= S; px += S / 40) {
+          var py = yy + Math.sin(px / S * 7 + ph) * amp + (px / S) * S * .01;
+          if (px === 0) x.moveTo(px, py); else x.lineTo(px, py);
+        }
+        x.stroke();
+      }
+      x.fillStyle = "#e6c39b"; x.fillRect(0, top - S * .004, S, S * .008);
+      g = x.createLinearGradient(0, top, 0, top + S * .06); g.addColorStop(0, "rgba(60,35,15,.22)"); g.addColorStop(1, "rgba(60,35,15,0)");
+      x.fillStyle = g; x.fillRect(0, top + S * .004, S, S * .06);
+      return;
+    }
+    if (id === "lazienka") {
+      var ctop = S * .72, t = S / 7;
+      x.fillStyle = "#e4efed"; x.fillRect(0, 0, S, ctop);
+      for (var ty = 0; ty < ctop; ty += t) for (var tx = 0; tx < S; tx += t) {
+        var d = (r() - .5) * 10;
+        x.fillStyle = "rgb(" + Math.round(226 + d) + "," + Math.round(239 + d) + "," + Math.round(236 + d) + ")";
+        x.fillRect(tx, ty, t, t);
+        g = x.createLinearGradient(tx, ty, tx + t, ty + t); g.addColorStop(0, "rgba(255,255,255,.35)"); g.addColorStop(1, "rgba(255,255,255,0)");
+        x.fillStyle = g; x.fillRect(tx, ty, t, t);
+      }
+      x.fillStyle = "#c6d9d5";
+      for (var gx = 0; gx <= S; gx += t) x.fillRect(gx - S * .002, 0, S * .004, ctop);
+      for (var gy = 0; gy <= ctop; gy += t) x.fillRect(0, gy - S * .002, S, S * .004);
+      light(x, S);
+      g = x.createLinearGradient(0, ctop, 0, S); g.addColorStop(0, "#f7f7f5"); g.addColorStop(1, "#dedcd8");
+      x.fillStyle = g; x.fillRect(0, ctop, S, S - ctop);
+      for (i = 0; i < 9; i++) {
+        x.strokeStyle = "rgba(120,120,125," + (.06 + r() * .1) + ")"; x.lineWidth = S * (.001 + r() * .003);
+        var sx0 = r() * S, sy0 = ctop + r() * (S - ctop);
+        x.beginPath(); x.moveTo(sx0, sy0);
+        x.bezierCurveTo(sx0 + S * .1, sy0 + (r() - .5) * S * .08, sx0 + S * .2, sy0 + (r() - .5) * S * .08, sx0 + S * .32, sy0 + (r() - .5) * S * .06);
+        x.stroke();
+      }
+      x.fillStyle = "#ffffff"; x.fillRect(0, ctop - S * .003, S, S * .007);
+      g = x.createLinearGradient(0, ctop, 0, ctop + S * .05); g.addColorStop(0, "rgba(40,60,60,.14)"); g.addColorStop(1, "rgba(40,60,60,0)");
+      x.fillStyle = g; x.fillRect(0, ctop + S * .004, S, S * .05);
+      return;
+    }
+    // natura
+    var ntop = S * .74;
+    g = x.createLinearGradient(0, 0, 0, ntop); g.addColorStop(0, "#e6eedb"); g.addColorStop(1, "#cbdabd");
+    x.fillStyle = g; x.fillRect(0, 0, S, ntop);
+    for (i = 0; i < 16; i++) blob(x, r() * S, r() * ntop * .9, S * (.03 + r() * .07), S * (.03 + r() * .07), r() < .5 ? "rgba(255,255,240,A)" : "rgba(120,160,100,A)", .25 + r() * .25);
+    function leaf(cx, cy, len, ang, w, c1, c2) {
+      x.save(); x.translate(cx, cy); x.rotate(ang);
+      var lg = x.createLinearGradient(0, -w, 0, w); lg.addColorStop(0, c1); lg.addColorStop(1, c2);
+      x.fillStyle = lg; x.beginPath(); x.moveTo(0, 0);
+      x.bezierCurveTo(len * .3, -w, len * .75, -w * .9, len, 0);
+      x.bezierCurveTo(len * .75, w * .9, len * .3, w, 0, 0); x.fill();
+      x.strokeStyle = "rgba(230,245,215,.45)"; x.lineWidth = Math.max(1, w * .06);
+      x.beginPath(); x.moveTo(len * .05, 0); x.quadraticCurveTo(len * .5, -w * .08, len * .92, 0); x.stroke();
+      x.restore();
+    }
+    var greens = [["#5f8f55", "#2f5a34"], ["#6d9a5c", "#3b6a3c"], ["#4f7a4a", "#26492a"]];
+    for (i = 0; i < 9; i++) {
+      var gg = greens[i % 3];
+      leaf(-S * .02, S * (.02 + i * .05), S * (.26 + r() * .12), -.35 + i * .16 + r() * .1, S * (.045 + r() * .02), gg[0], gg[1]);
+      leaf(S * 1.02, S * (.06 + i * .045), S * (.24 + r() * .1), Math.PI + .3 - i * .14 - r() * .1, S * (.04 + r() * .02), gg[0], gg[1]);
+    }
+    light(x, S);
+    g = x.createLinearGradient(0, ntop, 0, S); g.addColorStop(0, "#ece4d6"); g.addColorStop(1, "#cfc3ad");
+    x.fillStyle = g; x.fillRect(0, ntop, S, S - ntop);
+    for (i = 0; i < 260; i++) {
+      x.fillStyle = "rgba(110,95,70," + (.05 + r() * .12) + ")";
+      x.beginPath(); x.arc(r() * S, ntop + r() * (S - ntop), S * (.001 + r() * .003), 0, Math.PI * 2); x.fill();
+    }
+    x.fillStyle = "rgba(255,255,255,.6)"; x.fillRect(0, ntop - S * .002, S, S * .005);
+  }
+
+  /* ---------- Studio: stan ---------- */
+  var sample = makeSample();
+  var st = {
+    mode: "sample", name: "przykładowy kubek na szarym tle", size: 0,
+    src: sample.photo, ow: sample.photo.width, oh: sample.photo.height,
+    cut: sample.cut, bbox: sample.bbox, scene: "white", margin: 8, auto: false, adj: null
+  };
+  var cvA = document.getElementById("cv-after"), cvB = document.getElementById("cv-before");
+  var auditEl = document.getElementById("audit"), auditTitle = document.getElementById("audit-title");
+  var errEl = document.getElementById("studio-error");
+  var srcNameEl = document.getElementById("studio-src-name");
+  var resetBtn = document.getElementById("studio-reset");
+  var aiBtn = document.getElementById("ai-btn"), aiHint = document.getElementById("ai-hint");
+  var aiWrap = document.getElementById("ai-progress-wrap"), aiProg = document.getElementById("ai-progress");
+  var aiStatus = document.getElementById("ai-status"), aiMsg = document.getElementById("ai-msg");
+  var dlBtn = document.getElementById("studio-download"), dlHint = document.getElementById("studio-file-hint");
+  var dlMsg = document.getElementById("studio-dl-msg");
+  var sceneInputs = Array.prototype.slice.call(document.querySelectorAll('input[name="scene"]'));
+  var tagAfter = document.getElementById("studio-tag-after");
+
+  function placement(S) {
+    var m = st.margin / 100, b, s, dx, dy;
+    if (st.cut && st.bbox) {
+      b = st.bbox;
+      if (st.scene === "white") {
+        var inner = S * (1 - 2 * m);
+        s = Math.min(inner / b.w, inner / b.h);
+        dx = (S - b.w * s) / 2 - b.x * s; dy = (S - b.h * s) / 2 - b.y * s;
+      } else {
+        var k = (1 - 2 * m) / .84;
+        s = Math.min(S * .6 * k / b.w, S * .6 * k / b.h);
+        dx = S / 2 - (b.x + b.w / 2) * s; dy = S * SCENES[st.scene].ground - (b.y + b.h) * s;
+      }
+      return { s: s, dx: dx, dy: dy, cx: dx + (b.x + b.w / 2) * s, base: dy + (b.y + b.h) * s, pw: b.w * s };
+    }
+    var W = st.src.width, H = st.src.height, inn = S * (1 - 2 * m);
+    s = Math.min(inn / W, inn / H);
+    return { s: s, dx: (S - W * s) / 2, dy: (S - H * s) / 2 };
+  }
+
+  // Auto-jasność: rozciągnięcie poziomów (wspólne dla R, G, B — odcienie zostają) + lekkie rozjaśnienie ciemnych zdjęć.
+  function adjusted() {
+    var img = st.cut || st.src;
+    if (st.adj && st.adj.from === img) return st.adj.c;
+    var c = mkCanvas(img.width, img.height), x = rctx(c);
+    x.drawImage(img, 0, 0);
+    var d = x.getImageData(0, 0, c.width, c.height), a = d.data, hist = new Uint32Array(256), n = 0, i;
+    var useAlpha = !!st.cut;
+    for (i = 0; i < a.length; i += 16) {
+      if (useAlpha && a[i + 3] < 200) continue;
+      hist[(a[i] * 54 + a[i + 1] * 183 + a[i + 2] * 19) >> 8]++; n++;
+    }
+    var lo = 0, hi = 255, acc = 0;
+    if (n) {
+      for (i = 0; i < 256; i++) { acc += hist[i]; if (acc >= n * .005) { lo = i; break; } }
+      acc = 0;
+      for (i = 255; i >= 0; i--) { acc += hist[i]; if (acc >= n * .005) { hi = i; break; } }
+    }
+    lo = Math.min(lo, 40); hi = Math.max(hi, 215);
+    var mean = 0;
+    for (i = 0; i < 256; i++) mean += hist[i] * Math.max(0, Math.min(1, (i - lo) / (hi - lo)));
+    mean = n ? mean / n : .5;
+    var gam = mean < .42 && mean > .02 ? Math.max(.7, Math.log(.46) / Math.log(mean)) : 1;
+    var lut = new Uint8ClampedArray(256);
+    for (i = 0; i < 256; i++) lut[i] = Math.round(255 * Math.pow(Math.max(0, Math.min(1, (i - lo) / (hi - lo))), gam));
+    for (i = 0; i < a.length; i += 4) { a[i] = lut[a[i]]; a[i + 1] = lut[a[i + 1]]; a[i + 2] = lut[a[i + 2]]; }
+    x.putImageData(d, 0, 0);
+    st.adj = { from: img, c: c };
+    return c;
+  }
+
+  function drawShadow(x, p, S) {
+    var white = st.scene === "white";
+    var rx = p.pw * (white ? .42 : .5), ry = rx * (white ? .1 : .14);
+    x.save(); x.translate(p.cx, p.base - ry * .25); x.scale(1, ry / rx);
+    var g = x.createRadialGradient(0, 0, 0, 0, 0, rx);
+    var a = white ? .16 : .38;
+    g.addColorStop(0, "rgba(20,15,10," + a + ")"); g.addColorStop(.55, "rgba(20,15,10," + a * .45 + ")"); g.addColorStop(1, "rgba(20,15,10,0)");
+    x.fillStyle = g; x.beginPath(); x.arc(0, 0, rx, 0, Math.PI * 2); x.fill(); x.restore();
+  }
+
+  function renderAfter(c, S) {
+    var x = c.getContext("2d");
+    x.imageSmoothingEnabled = true; x.imageSmoothingQuality = "high";
+    drawScene(x, S, st.cut ? st.scene : "white");
+    var p = placement(S), img = st.auto ? adjusted() : (st.cut || st.src);
+    if (st.cut) drawShadow(x, p, S);
+    x.drawImage(img, p.dx, p.dy, img.width * p.s, img.height * p.s);
+  }
+  function renderBefore(c, S) {
+    var x = c.getContext("2d");
+    x.fillStyle = "#e2e0db"; x.fillRect(0, 0, S, S);
+    var p = placement(S);
+    x.imageSmoothingEnabled = true; x.imageSmoothingQuality = "high";
+    x.drawImage(st.src, p.dx, p.dy, st.src.width * p.s, st.src.height * p.s);
+  }
+  var raf = 0;
+  function scheduleRender() {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      raf = 0;
+      renderAfter(cvA, S_PREVIEW); renderBefore(cvB, S_PREVIEW);
+      tagAfter.textContent = "Po · " + SCENES[st.cut ? st.scene : "white"].name;
+    });
+  }
+
+  /* ---------- Audyt pod Allegro ---------- */
+  function ratioName(w, h) {
+    var r = Math.max(w, h) / Math.min(w, h);
+    var known = [[1, "1:1"], [5 / 4, "5:4"], [4 / 3, "4:3"], [3 / 2, "3:2"], [16 / 9, "16:9"], [2, "2:1"]];
+    for (var i = 0; i < known.length; i++) if (Math.abs(r - known[i][0]) / known[i][0] < .02) {
+      var n = known[i][1].split(":");
+      return w >= h ? known[i][1] : n[1] + ":" + n[0];
+    }
+    return w >= h ? nf1.format(w / h) + ":1" : "1:" + nf1.format(h / w);
+  }
+  function analyse() {
+    var src = st.src, k = Math.min(1, 400 / Math.max(src.width, src.height));
+    var c = mkCanvas(src.width * k, src.height * k), x = rctx(c);
+    x.drawImage(src, 0, 0, c.width, c.height);
+    var w = c.width, h = c.height, a = x.getImageData(0, 0, w, h).data;
+    var band = Math.max(2, Math.round(Math.min(w, h) * .03)), white = 0, tot = 0, lum = 0, px = 0;
+    for (var y = 0; y < h; y++) for (var xx = 0; xx < w; xx++) {
+      var i = (y * w + xx) * 4, R = a[i], G = a[i + 1], B = a[i + 2];
+      var L = .2126 * R + .7152 * G + .0722 * B;
+      lum += L; px++;
+      if (y < band || y >= h - band || xx < band || xx >= w - band) {
+        tot++;
+        if (L >= 235 && Math.max(R, G, B) - Math.min(R, G, B) <= 24) white++;
+      }
+    }
+    return { white: tot ? white / tot : 0, mean: px ? lum / px / 255 : 0 };
+  }
+  function auditItems() {
+    var W = st.ow, H = st.oh, L = Math.max(W, H), an = analyse(), items = [];
+    var res = L >= 2560
+      ? ["ok", "Allegro zaleca 2560 px na dłuższym boku — masz tyle albo więcej."]
+      : L >= 500
+        ? ["warn", "Minimum Allegro (500 px) jest spełnione, ale zalecane jest 2560 px. Eksport powiększy zdjęcie do 2560×2560, więc może być mniej ostre — zrób zdjęcie w pełnej rozdzielczości aparatu."]
+        : ["bad", "Allegro wymaga co najmniej 500 px na dłuższym boku. Zrób zdjęcie ponownie w pełnej rozdzielczości aparatu."];
+    items.push({ sev: res[0], title: "Rozdzielczość", val: W + " × " + H + " px", tip: res[1] });
+    var r = L / Math.min(W, H);
+    items.push(r < 1.02
+      ? { sev: "ok", title: "Proporcje", val: "kwadrat", tip: "Kwadrat najlepiej wygląda na liście ofert i w aplikacji Allegro." }
+      : { sev: r > 2 ? "bad" : "warn", title: "Proporcje", val: ratioName(W, H), tip: r > 2 ? "Bardzo wydłużone zdjęcie — po dopełnieniu do kwadratu produkt będzie mały. Zrób zdjęcie bliżej, w pionie lub w kwadracie." : "Zalecany jest kwadrat. Eksport dopełni zdjęcie do kwadratu białym tłem." });
+    var wp = Math.round(an.white * 100);
+    if (st.mode === "user" && st.cut) {
+      items.push({ sev: "ok", title: "Tło jest białe", val: "po wycięciu AI", tip: "Na oryginale białe było " + wp + " % krawędzi. Wycięty produkt eksportujemy na czystym białym tle — sprawdź jeszcze krawędzie na podglądzie." });
+    } else {
+      items.push(an.white >= .9
+        ? { sev: "ok", title: "Tło jest białe", val: wp + " % krawędzi", tip: "Tak powinno wyglądać zdjęcie główne: jasne, równe tło bez przedmiotów w kadrze." }
+        : { sev: an.white >= .6 ? "warn" : "bad", title: an.white >= .6 ? "Tło nie całkiem białe" : "Tło nie jest białe", val: "białe " + wp + " % krawędzi", tip: "Zdjęcie główne na Allegro musi mieć białe tło. Użyj „Wytnij tło” poniżej albo zrób zdjęcie na białej kartce, blisko okna." });
+    }
+    var mp = Math.round(an.mean * 100);
+    items.push(an.mean < .33
+      ? { sev: "bad", title: "Ekspozycja", val: "średnia jasność " + mp + " %", tip: "Zdjęcie jest za ciemne. Podejdź do okna albo włącz „Auto-jasność” w kroku 4." }
+      : an.mean < .45
+        ? { sev: "warn", title: "Ekspozycja", val: "średnia jasność " + mp + " %", tip: "Zdjęcie jest raczej ciemne. Włącz „Auto-jasność” albo zrób zdjęcie przy dziennym świetle." }
+        : an.mean > .96
+          ? { sev: "warn", title: "Ekspozycja", val: "średnia jasność " + mp + " %", tip: "Prawie całe zdjęcie jest jasne — sprawdź, czy produkt nie jest prześwietlony." }
+          : { sev: "ok", title: "Ekspozycja", val: "średnia jasność " + mp + " %", tip: "Jasność jest w porządku." });
+    if (st.mode === "sample") items.push({ sev: "ok", title: "Rozmiar pliku", val: "przykład", tip: "Przy Twoim zdjęciu sprawdzimy też wagę pliku." });
+    else if (st.size < 50 * 1024) items.push({ sev: "warn", title: "Rozmiar pliku", val: nf0.format(st.size / 1024) + " KB", tip: "Bardzo mały plik — zdjęcie mogło być mocno skompresowane (np. w komunikatorze). Wgraj oryginał z galerii." });
+    else if (st.size > 10 * 1048576) items.push({ sev: "warn", title: "Rozmiar pliku", val: mb(st.size), tip: "Duży plik wolniej się wgrywa. Eksport JPG z Kadru będzie wyraźnie lżejszy." });
+    else items.push({ sev: "ok", title: "Rozmiar pliku", val: mb(st.size), tip: "Waga pliku jest w porządku." });
+    return items;
+  }
+  function renderAudit() {
+    var items = auditItems(), ok = items.filter(function (i) { return i.sev === "ok"; }).length;
+    auditTitle.textContent = st.mode === "sample" ? "Audyt przykładowego zdjęcia" : "Audyt zdjęcia pod Allegro";
+    var html = '<p class="audit-sum"><strong>' + ok + ' z ' + items.length + '</strong> punktów w porządku</p><ul class="audit">';
+    items.forEach(function (i) {
+      html += '<li class="a-' + i.sev + '" data-check="' + esc(i.title) + '"><span class="a-dot"><svg aria-hidden="true"><use href="' + sevIcon(i.sev) + '"/></svg></span><div>' +
+        '<div class="a-head"><strong>' + esc(i.title) + '</strong><span class="a-val">' + esc(i.val) + '</span><span class="a-lvl">' + sevLabel(i.sev) + '</span></div><p>' + esc(i.tip) + '</p></div></li>';
+    });
+    auditEl.innerHTML = html + '</ul>';
+  }
+
+  function syncUI() {
+    srcNameEl.textContent = st.name;
+    resetBtn.hidden = st.mode === "sample";
+    var canScene = !!st.cut;
+    sceneInputs.forEach(function (inp) { inp.disabled = !canScene && inp.value !== "white"; });
+    if (!canScene && st.scene !== "white") { st.scene = "white"; sceneInputs[0].checked = true; }
+    document.getElementById("scene-note").textContent = canScene
+      ? "Tła w demo są uproszczone; w pełnej wersji generujemy fotorealistyczne sceny. Na zdjęcie główne Allegro wybierz białe tło, aranżacje dodaj jako zdjęcia dodatkowe."
+      : "Aranżacje działają po wycięciu tła (krok 3). Tła w demo są uproszczone; w pełnej wersji generujemy fotorealistyczne sceny.";
+    var userNoCut = st.mode === "user" && !st.cut;
+    aiBtn.disabled = st.mode !== "user" || aiBusy;
+    aiHint.textContent = st.mode !== "user"
+      ? "Wgraj swoje zdjęcie, żeby wypróbować. Przykładowy kubek to grafika, więc jego tło jest już wycięte."
+      : userNoCut ? "Działa najlepiej, gdy produkt jest w całości w kadrze i odcina się od tła." : "Tło wycięte. Możesz zmienić tło lub pobrać JPG.";
+    var f = SCENES[st.scene].file;
+    dlMsg.innerHTML = "";
+    dlHint.textContent = f + " · 2560×2560 · bez znaku wodnego";
+    renderAudit();
+    scheduleRender();
+  }
+
+  /* ---------- Wczytywanie zdjęcia ---------- */
+  function showErr(msg) { errEl.innerHTML = msg ? '<p class="s-msg bad">' + msg + '</p>' : ""; }
+  function loadFile(file) {
+    if (!file) return;
+    showErr("");
+    var name = file.name || "zdjęcie ze schowka";
+    var heic = /hei[cf]/i.test(file.type) || /\.(heic|heif)$/i.test(name);
+    if (!/^image\//.test(file.type) && !heic) { showErr("To nie wygląda na zdjęcie. Wgraj plik JPG, PNG, WebP lub HEIC."); return; }
+    if (file.size > MAX_BYTES) { showErr("Plik ma " + mb(file.size) + " — limit to 20 MB. Zmniejsz zdjęcie albo wyślij je w niższej jakości."); return; }
+    var url = URL.createObjectURL(file), img = new Image();
+    document.getElementById("stage-busy").hidden = false;
+    img.onload = function () {
+      var W = img.naturalWidth, H = img.naturalHeight;
+      if (!W || !H) { img.onerror(); return; }
+      var k = Math.min(1, S_EXPORT / Math.max(W, H)), c = mkCanvas(W * k, H * k), x = c.getContext("2d");
+      x.imageSmoothingQuality = "high";
+      x.drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      aiRun++; setAIBusy(false); aiWrap.hidden = true; aiMsg.innerHTML = "";
+      st = { mode: "user", name: name, size: file.size, src: c, ow: W, oh: H, cut: null, bbox: null, scene: "white", margin: st.margin, auto: st.auto, adj: null };
+      sceneInputs[0].checked = true;
+      document.getElementById("stage-busy").hidden = true;
+      srcNameEl.textContent = name;
+      syncUI();
+    };
+    img.onerror = function () {
+      URL.revokeObjectURL(url);
+      document.getElementById("stage-busy").hidden = true;
+      showErr(heic
+        ? "Ta przeglądarka nie otwiera plików HEIC. Na iPhonie wybierz w Ustawieniach → Aparat → Formaty opcję „Najbardziej zgodne” albo wyślij zdjęcie jako JPG. Możesz też otworzyć tę stronę w Safari, które czyta HEIC."
+        : "Nie udało się odczytać tego zdjęcia. Spróbuj innego pliku JPG, PNG lub WebP.");
+    };
+    img.src = url;
+  }
+  var fileIn = document.getElementById("studio-file"), camIn = document.getElementById("studio-camera");
+  document.getElementById("studio-pick").addEventListener("click", function () { fileIn.click(); });
+  document.getElementById("studio-shoot").addEventListener("click", function () { camIn.click(); });
+  [fileIn, camIn].forEach(function (inp) {
+    inp.addEventListener("change", function () { loadFile(inp.files && inp.files[0]); inp.value = ""; });
+  });
+  var drop = document.getElementById("studio-drop"), stage = document.querySelector(".studio-stage");
+  [drop, stage].forEach(function (zone) {
+    zone.addEventListener("dragover", function (e) {
+      if (e.dataTransfer && Array.prototype.indexOf.call(e.dataTransfer.types || [], "Files") !== -1) { e.preventDefault(); drop.classList.add("is-over"); }
+    });
+    zone.addEventListener("dragleave", function () { drop.classList.remove("is-over"); });
+    zone.addEventListener("drop", function (e) {
+      e.preventDefault(); drop.classList.remove("is-over");
+      loadFile(e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]);
+    });
+  });
+  document.addEventListener("paste", function (e) {
+    var items = e.clipboardData && e.clipboardData.items;
+    if (!items) return;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].kind === "file" && /^image\//.test(items[i].type)) {
+        var f = items[i].getAsFile();
+        if (f) {
+          e.preventDefault();
+          loadFile(f);
+          var b = drop.getBoundingClientRect();
+          if (b.bottom < 0 || b.top > window.innerHeight) document.getElementById("studio").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+        }
+        return;
+      }
+    }
+  });
+  resetBtn.addEventListener("click", function () {
+    aiRun++; setAIBusy(false); aiWrap.hidden = true; aiMsg.innerHTML = ""; showErr("");
+    st = { mode: "sample", name: "przykładowy kubek na szarym tle", size: 0, src: sample.photo, ow: sample.photo.width, oh: sample.photo.height, cut: sample.cut, bbox: sample.bbox, scene: "white", margin: st.margin, auto: st.auto, adj: null };
+    sceneInputs[0].checked = true;
+    syncUI();
+  });
+
+  /* ---------- Kontrolki kadru i sceny ---------- */
+  var mIn = document.getElementById("s-margin"), mOut = document.getElementById("s-margin-out");
+  mIn.addEventListener("input", function () { st.margin = +mIn.value; mOut.textContent = mIn.value + " %"; scheduleRender(); });
+  document.getElementById("s-auto").addEventListener("change", function (e) { st.auto = e.target.checked; scheduleRender(); });
+  sceneInputs.forEach(function (inp) {
+    inp.addEventListener("change", function () {
+      if (!inp.checked) return;
+      st.scene = inp.value;
+      dlMsg.innerHTML = "";
+      dlHint.textContent = SCENES[st.scene].file + " · 2560×2560 · bez znaku wodnego";
+      scheduleRender();
+    });
+  });
+
+  /* ---------- Eksport JPG 2560×2560 ---------- */
+  function saveBlob(b, name) {
+    var url = URL.createObjectURL(b), a = document.createElement("a");
+    a.href = url; a.download = name; a.rel = "noopener";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+  }
+  dlBtn.addEventListener("click", function () {
+    if (dlBtn.disabled) return;
+    var label = dlBtn.querySelector("span");
+    dlBtn.disabled = true; label.textContent = "Przygotowuję…";
+    dlMsg.innerHTML = "";
+    setTimeout(function () {
+      try {
+        var c = mkCanvas(S_EXPORT, S_EXPORT);
+        renderAfter(c, S_EXPORT);
+        var file = SCENES[st.cut ? st.scene : "white"].file;
+        c.toBlob(function (b) {
+          dlBtn.disabled = false; label.textContent = "Pobierz JPG";
+          if (!b) { dlMsg.innerHTML = '<p class="s-msg bad">Nie udało się zapisać pliku w tej przeglądarce.</p>'; return; }
+          saveBlob(b, file);
+          dlMsg.innerHTML = '<p class="s-msg ok">Zapisano ' + esc(file) + ' (' + mb(b.size) + ').' + (Math.max(st.ow, st.oh) < S_EXPORT ? " Oryginał był mniejszy niż 2560 px, więc obraz został powiększony." : "") + '</p>';
+        }, "image/jpeg", .92);
+      } catch (err) {
+        dlBtn.disabled = false; label.textContent = "Pobierz JPG";
+        dlMsg.innerHTML = '<p class="s-msg bad">Nie udało się przygotować pliku. Spróbuj mniejszego zdjęcia.</p>';
+      }
+    }, 30);
+  });
+
+  /* ---------- Wycinanie tła AI w przeglądarce (ładowane dopiero po kliknięciu) ---------- */
+  var AI_URL = "https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.8/+esm";
+  var AI_STALL_MS = 120000;
+  var aiBusy = false, aiRun = 0;
+  function setAIBusy(b) {
+    aiBusy = b;
+    aiBtn.disabled = b || st.mode !== "user";
+    aiBtn.textContent = b ? "Wycinam…" : "Wytnij tło";
+  }
+  function aiFail(reason) {
+    aiWrap.hidden = true;
+    aiMsg.innerHTML = '<p class="s-msg bad" data-ai-error="' + esc(reason) + '">Wycinanie AI nie uruchomiło się w tej przeglądarce. W pełnej wersji Kadra wycinanie robi serwer — <a href="#generator">zapisz się po 3 darmowe zdjęcia</a>.</p>';
+  }
+  function alphaBox(c) {
+    var x = rctx(c), w = c.width, h = c.height, a = x.getImageData(0, 0, w, h).data;
+    var minX = w, minY = h, maxX = -1, maxY = -1;
+    for (var y = 0; y < h; y++) {
+      var row = y * w * 4;
+      for (var xx = 0; xx < w; xx++) {
+        if (a[row + xx * 4 + 3] > 24) {
+          if (xx < minX) minX = xx; if (xx > maxX) maxX = xx;
+          if (y < minY) minY = y; maxY = y;
+        }
+      }
+    }
+    return maxX < 0 ? null : { x: minX, y: minY, w: maxX - minX + 1, h: maxY - minY + 1 };
+  }
+  // Sprzątanie maski: zostawia główne, spójne obszary produktu i usuwa drobne „okruchy” tła.
+  function cleanMask(cut) {
+    var w = cut.width, h = cut.height, k = Math.min(1, 512 / Math.max(w, h));
+    var sw = Math.max(1, Math.round(w * k)), sh = Math.max(1, Math.round(h * k));
+    var sm = mkCanvas(sw, sh), sx = rctx(sm);
+    sx.drawImage(cut, 0, 0, sw, sh);
+    var a = sx.getImageData(0, 0, sw, sh).data, n = sw * sh, lab = new Int32Array(n), q = new Int32Array(n), areas = [0], i, j;
+    for (i = 0; i < n; i++) {
+      if (lab[i] || a[i * 4 + 3] <= 100) continue;
+      var id = areas.length, head = 0, tail = 0, area = 0;
+      lab[i] = id; q[tail++] = i;
+      while (head < tail) {
+        var p = q[head++], px = p % sw, py = (p - px) / sw; area++;
+        var nb = [px > 0 ? p - 1 : -1, px < sw - 1 ? p + 1 : -1, py > 0 ? p - sw : -1, py < sh - 1 ? p + sw : -1];
+        for (j = 0; j < 4; j++) { var t = nb[j]; if (t >= 0 && !lab[t] && a[t * 4 + 3] > 100) { lab[t] = id; q[tail++] = t; } }
+      }
+      areas.push(area);
+    }
+    var max = Math.max.apply(null, areas);
+    if (!max) return;
+    var keep = new Uint8Array(n);
+    for (i = 0; i < n; i++) if (lab[i] && areas[lab[i]] >= Math.max(4, max * .03)) keep[i] = 1;
+    var R = 2, dil = new Uint8Array(n);
+    for (i = 0; i < n; i++) if (keep[i]) {
+      var cx = i % sw, cy = (i - cx) / sw;
+      for (var yy = Math.max(0, cy - R); yy <= Math.min(sh - 1, cy + R); yy++) for (var xx = Math.max(0, cx - R); xx <= Math.min(sw - 1, cx + R); xx++) dil[yy * sw + xx] = 1;
+    }
+    var fx = rctx(cut), img = fx.getImageData(0, 0, w, h), d = img.data;
+    for (var y = 0; y < h; y++) {
+      var row = Math.min(sh - 1, Math.floor(y * k)) * sw;
+      for (var x = 0; x < w; x++) if (!dil[row + Math.min(sw - 1, Math.floor(x * k))]) d[(y * w + x) * 4 + 3] = 0;
+    }
+    fx.putImageData(img, 0, 0);
+  }
+  function toBlobP(c, type) { return new Promise(function (res, rej) { c.toBlob(function (b) { b ? res(b) : rej(new Error("toBlob")); }, type); }); }
+  function blobToCanvas(b, w, h) {
+    return new Promise(function (res, rej) {
+      var url = URL.createObjectURL(b), img = new Image();
+      img.onload = function () { var c = mkCanvas(w, h); rctx(c).drawImage(img, 0, 0, w, h); URL.revokeObjectURL(url); res(c); };
+      img.onerror = function () { URL.revokeObjectURL(url); rej(new Error("decode")); };
+      img.src = url;
+    });
+  }
+  aiBtn.addEventListener("click", function () {
+    if (aiBusy || st.mode !== "user") return;
+    var run = ++aiRun, src = st.src, t0 = performance.now(), last = Date.now(), timer = null;
+    var fetches = {};
+    setAIBusy(true);
+    aiMsg.innerHTML = ""; aiWrap.hidden = false; aiProg.value = 2;
+    aiStatus.textContent = "Ładuję bibliotekę AI…";
+    var stall = new Promise(function (_, rej) {
+      timer = setInterval(function () { if (Date.now() - last > AI_STALL_MS) rej(new Error("timeout")); }, 1000);
+    });
+    function onProgress(key, cur, total) {
+      last = Date.now();
+      if (run !== aiRun) return;
+      if (/^fetch:/.test(key)) {
+        fetches[key] = [cur, total];
+        var c = 0, t = 0;
+        Object.keys(fetches).forEach(function (k) { c += fetches[k][0]; t += fetches[k][1]; });
+        if (t > 0) {
+          aiProg.value = Math.min(85, 5 + 80 * c / t);
+          aiStatus.textContent = "Pobieranie modelu AI: " + Math.round(100 * c / t) + " % (" + mb(c) + " z " + mb(t) + ")";
+        }
+      } else if (/^compute:/.test(key)) {
+        aiProg.value = 85 + 15 * Math.min(1, (cur + 1) / Math.max(1, total));
+        aiStatus.textContent = "Wycinam tło na Twoim urządzeniu… (krok " + Math.min(total, cur + 1) + " z " + total + ")";
+      }
+    }
+    Promise.resolve().then(function () {
+      if (typeof WebAssembly !== "object") throw new Error("no-wasm");
+      if (navigator.onLine === false) throw new Error("offline");
+      return Promise.race([import(AI_URL), stall]);
+    }).then(function (mod) {
+      last = Date.now();
+      if (!mod || typeof mod.removeBackground !== "function") throw new Error("no-export");
+      aiStatus.textContent = "Przygotowuję model AI…";
+      return toBlobP(src, "image/png").then(function (b) {
+        return Promise.race([mod.removeBackground(b, { model: "isnet_quint8", output: { format: "image/png" }, progress: onProgress }), stall]);
+      });
+    }).then(function (res) {
+      return blobToCanvas(res, src.width, src.height);
+    }).then(function (cut) {
+      if (run !== aiRun) return;
+      cleanMask(cut);
+      var box = alphaBox(cut);
+      if (!box || box.w < 4 || box.h < 4) throw new Error("empty");
+      st.cut = cut; st.bbox = box; st.adj = null;
+      aiProg.value = 100;
+      var secs = (performance.now() - t0) / 1000;
+      aiStatus.textContent = "Gotowe w " + nf1.format(secs) + " s.";
+      aiMsg.innerHTML = '<p class="s-msg ok" data-ai-ok="' + secs.toFixed(1) + '">Tło wycięte w ' + nf1.format(secs) + ' s. Sprawdź krawędzie na podglądzie — demo AI może się mylić przy cienkich lub przezroczystych elementach. Teraz możesz wybrać aranżację.</p>';
+      setAIBusy(false);
+      syncUI();
+    }).catch(function (err) {
+      if (run !== aiRun) return;
+      setAIBusy(false);
+      if (err && err.message === "empty") {
+        aiWrap.hidden = true;
+        aiMsg.innerHTML = '<p class="s-msg warn" data-ai-error="empty">AI nie znalazło produktu na tym zdjęciu. Spróbuj zdjęcia, na którym produkt jest w całości i wyraźnie odcina się od tła.</p>';
+      } else aiFail(err && err.message ? err.message : String(err));
+      syncUI();
+    }).then(function () { clearInterval(timer); });
+  });
+
+  syncUI();
+
+  /* ---------- Kalkulator oszczędności ---------- */
+  var calcN = document.getElementById("calc-n");
+  var PLANS = { start: { name: "Na start", price: 29, photos: 30, id: "plan-start" }, sklep: { name: "Sklep", price: 99, photos: 200, id: "plan-sklep" }, pro: { name: "Pro", price: 249, photos: 1000, id: "plan-pro" } };
+  var pickedPlan = "sklep";
+  function packs(n) { return Math.ceil(12 * n / 30) * 29 / 12; }
+  function kadrPlan(n, shots) {
+    var opts = [];
+    if (shots === 1) opts.push({ plan: "start", cost: packs(n), how: n < 30
+      ? "Pakiet Na start (30 zdjęć za 29 zł) starcza na ok. " + Math.min(12, Math.floor(30 / n)) + " " + plural(Math.min(12, Math.floor(30 / n)), "miesiąc", "miesiące", "miesięcy") + "."
+      : "Ok. " + nf1.format(n / 30) + " pakietu Na start (29 zł za 30 zdjęć) miesięcznie." });
+    if (n <= 200) opts.push({ plan: "sklep", cost: 99, how: "Plan Sklep: 99 zł/mies., do 200 zdjęć i opisów." });
+    if (n <= 1000) opts.push({ plan: "pro", cost: 249, how: "Plan Pro: 249 zł/mies., do 1000 zdjęć." });
+    else opts.push({ plan: "pro", cost: 249 + packs(n - 1000), how: "Plan Pro (1000 zdjęć) i pakiety Na start na pozostałe " + nf0.format(n - 1000) + " zdjęć.", combo: true });
+    opts.sort(function (a, b) { return a.cost - b.cost; });
+    return opts[0];
+  }
+  function updateCalc() {
+    var p = +calcN.value, shots = +(document.querySelector('input[name="shots"]:checked') || { value: 1 }).value, n = p * shots;
+    document.getElementById("calc-n-out").textContent = p;
+    document.getElementById("calc-photos").innerHTML = "Razem <strong>" + nf0.format(n) + " " + plural(n, "zdjęcie", "zdjęcia", "zdjęć") + "</strong> miesięcznie.";
+    var lo = n * 25, hi = n * 40, selfMin = n * 15, self = selfMin / 60 * 30;
+    var k = kadrPlan(n, shots), kMin = p * 1;
+    document.getElementById("calc-photo-cost").innerHTML = zlRange(lo, hi) + " <small>/ mies.</small>";
+    document.getElementById("calc-self-cost").innerHTML = zl(self) + " <small>/ mies. Twojego czasu</small>";
+    document.getElementById("calc-self-time").textContent = "Czas: ok. " + hm(selfMin) + " miesięcznie";
+    document.getElementById("calc-kadr-cost").innerHTML = (k.cost < 10 ? "ok. " : "") + zl(k.cost) + " <small>/ mies.</small>";
+    document.getElementById("calc-kadr-time").textContent = "Czas: ok. " + hm(kMin) + " miesięcznie";
+    document.getElementById("calc-kadr-how").textContent = k.how + (shots === 5 ? " Komplety 5 ujęć są w planach Sklep i Pro." : "");
+    pickedPlan = k.plan;
+    var btn = document.getElementById("calc-pick");
+    btn.textContent = "Wybierz plan " + PLANS[k.plan].name;
+    btn.setAttribute("data-plan", k.plan);
+    document.querySelector("#calc-save span").innerHTML = "Z Kadrem wydasz ok. <strong>" + zlRange(Math.max(0, lo - k.cost), Math.max(0, hi - k.cost)) + "</strong> mniej niż u fotografa i odzyskasz ok. <strong>" + hm(Math.max(0, selfMin - kMin)) + "</strong> w porównaniu z robieniem wszystkiego samodzielnie — co miesiąc.";
+  }
+  calcN.addEventListener("input", updateCalc);
+  document.querySelectorAll('input[name="shots"]').forEach(function (r) { r.addEventListener("change", updateCalc); });
+  document.getElementById("calc-pick").addEventListener("click", function () {
+    var card = document.getElementById(PLANS[pickedPlan].id);
+    if (!card) return;
+    document.querySelectorAll(".plan.is-picked").forEach(function (c) { c.classList.remove("is-picked"); });
+    card.classList.add("is-picked");
+    card.classList.add("is-visible");
+    card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+    var h = card.querySelector("h3");
+    if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+    setTimeout(function () { card.classList.remove("is-picked"); }, 4000);
+  });
+  updateCalc();
+
+  /* ---------- Pasek CTA na telefonie ---------- */
+  var mcta = document.getElementById("mcta");
+  if (mcta && "IntersectionObserver" in window) {
+    var vis = { hero: true, studio: false, footer: false };
+    var mio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { vis[e.target.getAttribute("data-mcta")] = e.isIntersecting; });
+      mcta.classList.toggle("show", !vis.hero && !vis.studio && !vis.footer);
+    });
+    [["hero", document.querySelector(".hero")], ["studio", document.getElementById("studio")], ["footer", document.querySelector(".site-footer")]].forEach(function (p) {
+      if (p[1]) { p[1].setAttribute("data-mcta", p[0]); mio.observe(p[1]); }
+    });
+  }
+
+  /* ---------- Linki „Wgraj swoje zdjęcie” ustawiają fokus na przycisku ---------- */
+  document.querySelectorAll("a[data-focus]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var t = document.getElementById(a.getAttribute("data-focus"));
+      if (t) setTimeout(function () { t.focus({ preventScroll: true }); }, reduce ? 0 : 450);
     });
   });
 
