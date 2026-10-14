@@ -2910,7 +2910,17 @@ input[type="range"] { width: 100%; accent-color: var(--accent); min-height: 32px
   });
 
   /* ---------- Eksport JPG 2560×2560 ---------- */
+  /* Na zwykłym hostingu: klasyczne pobieranie. W podglądzie claude.ai (window.claude)
+     przeglądarka podglądu blokuje pobieranie, więc używamy jego własnej możliwości "downloads". */
+  var claudeDownloads = null;
+  if (window.claude && typeof window.claude.use === "function") {
+    try { window.claude.use("downloads").then(function (d) { claudeDownloads = d; }).catch(function () {}); } catch (e) {}
+  }
   function saveBlob(b, name) {
+    if (claudeDownloads) {
+      claudeDownloads.save({ filename: name, data: b }).catch(function () {});
+      return;
+    }
     var url = URL.createObjectURL(b), a = document.createElement("a");
     a.href = url; a.download = name; a.rel = "noopener";
     document.body.appendChild(a); a.click(); a.remove();
