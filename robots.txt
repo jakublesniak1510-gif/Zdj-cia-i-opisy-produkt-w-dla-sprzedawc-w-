@@ -1,0 +1,5 @@
+# ZMIEŃ: podmień https://ZMIEN-NA-DOMENE.pl/ na docelową domenę serwisu.
+User-agent: *
+Allow: /
+
+Sitemap: https://ZMIEN-NA-DOMENE.pl/sitemap.xml

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Kadr: szablon og-image</title>
+<!-- Szablon obrazka Open Graph (1200×630). Renderowany do ../og-image.png przez Playwright. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf8; --surface: #ffffff; --text: #16161d; --muted: #565664; --border: #e5e3dd;
+  --accent: #4f46e5; --accent-soft: #eeedff; --accent-text: #4338ca; --ok: #15803d;
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { width: 1200px; height: 630px; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--font); -webkit-font-smoothing: antialiased; }
+.og { position: relative; width: 1200px; height: 630px; padding: 64px 64px 56px 72px; display: grid; grid-template-columns: 1fr 470px; gap: 40px; align-items: center; }
+.og::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(520px 300px at 12% 0%, rgba(79, 70, 229, .16), transparent 70%),
+    radial-gradient(460px 280px at 95% 100%, rgba(245, 158, 11, .14), transparent 70%);
+}
+.og > * { position: relative; z-index: 1; }
+.logo { display: inline-flex; align-items: center; gap: 14px; font-weight: 800; font-size: 34px; letter-spacing: -0.03em; }
+.logo-mark { width: 46px; height: 46px; border-radius: 12px; background: var(--accent); display: grid; place-items: center; }
+.logo-mark svg { width: 28px; height: 28px; }
+h1 { margin: 34px 0 0; font-size: 58px; line-height: 1.08; letter-spacing: -0.035em; font-weight: 800; }
+h1 .arrow { color: var(--accent); }
+h1 .hl { color: var(--accent-text); }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; padding: 0; list-style: none; }
+.chips li { font-size: 19px; font-weight: 700; padding: 9px 16px; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--border); color: var(--text); }
+.chips li b { color: var(--accent-text); }
+.visual { position: relative; height: 460px; }
+.frame { position: absolute; border-radius: 22px; overflow: hidden; box-shadow: 0 1px 2px rgba(22,22,29,.06), 0 24px 48px -20px rgba(22,22,29,.35); }
+.before { left: 0; top: 30px; width: 210px; height: 280px;
+  background:
+    radial-gradient(60% 40% at 78% 18%, rgba(255, 246, 214, .55), transparent 70%),
+    radial-gradient(70% 55% at 15% 30%, #8f8c86, transparent 72%),
+    linear-gradient(176deg, #a29e96 0%, #8a867f 52%, #6b675f 53%, #7b766d 72%, #5f5a52 100%); }
+.after { right: 0; top: 110px; width: 300px; height: 300px; background: #fff; border: 1px solid var(--border); }
+.tag { position: absolute; left: 14px; top: 14px; font-size: 15px; font-weight: 800; padding: 5px 12px; border-radius: 999px; background: rgba(20,20,24,.72); color: #fff; }
+.after .tag { background: var(--accent); }
+.size { position: absolute; right: 14px; bottom: 14px; font-size: 15px; font-weight: 800; padding: 5px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-text); }
+.arrow-dot { position: absolute; left: 146px; top: 196px; width: 64px; height: 64px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; box-shadow: 0 12px 26px -10px var(--accent); z-index: 2; }
+.arrow-dot svg { width: 30px; height: 30px; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="mugBody" x1="0" x2="1"><stop offset="0" stop-color="#0f5f55"/><stop offset=".35" stop-color="#1c8a7b"/><stop offset=".7" stop-color="#17786b"/><stop offset="1" stop-color="#0c5049"/></linearGradient>
+    <linearGradient id="mugInner" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0a3d37"/><stop offset="1" stop-color="#14695e"/></linearGradient>
+    <symbol id="mug" viewBox="0 0 220 200">
+      <path d="M150 64 C 196 60, 204 92, 196 112 C 188 134, 166 142, 148 140" fill="none" stroke="#0f5f55" stroke-width="16" stroke-linecap="round"/>
+      <path d="M150 64 C 196 60, 204 92, 196 112 C 188 134, 166 142, 148 140" fill="none" stroke="#1c8a7b" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+      <path d="M40 46 L160 46 L154 166 Q152 186 132 186 L68 186 Q48 186 46 166 Z" fill="url(#mugBody)"/>
+      <ellipse cx="100" cy="46" rx="60" ry="12" fill="#1f9483"/>
+      <ellipse cx="100" cy="47" rx="52" ry="8.5" fill="url(#mugInner)"/>
+      <path d="M60 62 L64 168" stroke="#ffffff" stroke-opacity=".22" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="102" cy="114" r="22" fill="#f6efe2"/>
+      <path d="M102 99 C 112 106, 112 122, 102 129 C 92 122, 92 106, 102 99 Z" fill="#e0782f"/>
+      <path d="M102 104 L102 126" stroke="#f6efe2" stroke-width="2"/>
+      <path d="M138 50 l6 1 l-2 5 z" fill="#d9e9e4"/>
+    </symbol>
+  </defs>
+</svg>
+<div class="og">
+  <div>
+    <div class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></span>
+      Kadr
+    </div>
+    <h1>Zdjęcie z telefonu <span class="arrow">→</span> oferta gotowa na Allegro <span class="hl">w&nbsp;60&nbsp;sekund</span></h1>
+    <ul class="chips">
+      <li><b>Białe tło</b> 2560×2560</li>
+      <li><b>Tytuł</b> do 75 znaków</li>
+      <li><b>Parametry</b> i opis</li>
+    </ul>
+  </div>
+  <div class="visual" aria-hidden="true">
+    <div class="frame before">
+      <svg viewBox="0 0 210 280" width="210" height="280">
+        <rect x="14" y="44" width="62" height="96" rx="12" fill="#5c5a57" opacity=".55"/>
+        <rect x="150" y="118" width="54" height="24" rx="12" fill="#b8b1a3" opacity=".6"/>
+        <ellipse cx="112" cy="232" rx="58" ry="12" fill="rgba(30,28,24,.45)"/>
+        <svg x="40" y="118" width="130" height="118" viewBox="0 0 220 200"><use href="#mug"/></svg>
+      </svg>
+      <span class="tag">Przed</span>
+    </div>
+    <div class="arrow-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+    <div class="frame after">
+      <svg viewBox="0 0 300 300" width="300" height="300">
+        <ellipse cx="140" cy="250" rx="72" ry="9" fill="rgba(0,0,0,.10)"/>
+        <svg x="28" y="40" width="244" height="222" viewBox="0 0 220 200"><use href="#mug"/></svg>
+      </svg>
+      <span class="tag">Po</span>
+      <span class="size">2560×2560</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

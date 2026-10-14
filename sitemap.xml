@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ZMIEŃ: podmień https://ZMIEN-NA-DOMENE.pl/ na docelową domenę serwisu we wszystkich adresach poniżej. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ZMIEN-NA-DOMENE.pl/</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ZMIEN-NA-DOMENE.pl/blog/</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ZMIEN-NA-DOMENE.pl/blog/jak-robic-zdjecia-na-allegro.html</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ZMIEN-NA-DOMENE.pl/blog/jak-szybciej-sprzedac-na-vinted.html</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://ZMIEN-NA-DOMENE.pl/blog/tytul-oferty-allegro-75-znakow.html</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+</urlset>
